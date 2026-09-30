@@ -1,0 +1,2986 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#0b0a09" />
+
+<!-- ============================================================
+     SEO / META
+     ============================================================ -->
+<title>Koshe Kosha Durgapur | Authentic Bengali Cuisine</title>
+<meta name="description" content="Koshe Kosha Durgapur — authentic Bengali cuisine in City Centre, Durgapur. Known for Kosha Mangsho, Malai Chingri Biryani & Bhetki Paturi. Rated 4.4★ by 734+ guests. Reserve your table today." />
+<meta name="keywords" content="Koshe Kosha Durgapur, Bengali restaurant Durgapur, Kosha Mangsho, Bengali cuisine, City Centre Durgapur restaurant" />
+<link rel="canonical" href="https://koshekosha-durgapur.example/" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="restaurant" />
+<meta property="og:title" content="Koshe Kosha Durgapur | Authentic Bengali Cuisine" />
+<meta property="og:description" content="The soul of Bengal, served beautifully. Authentic Bengali dining in City Centre, Durgapur." />
+<meta property="og:image" content="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1200&q=80" />
+<meta property="og:locale" content="en_IN" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Koshe Kosha Durgapur | Authentic Bengali Cuisine" />
+<meta name="twitter:description" content="The soul of Bengal, served beautifully. Authentic Bengali dining in City Centre, Durgapur." />
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&family=Noto+Serif+Bengali:wght@400;600&display=swap" rel="stylesheet" />
+
+<!-- ============================================================
+     STRUCTURED DATA
+     ============================================================ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Koshe Kosha Durgapur",
+  "alternateName": "কোশে কষা দুর্গাপুর",
+  "servesCuisine": "Bengali",
+  "priceRange": "₹400–₹1,600",
+  "telephone": "+91-75950-77711",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "1/7, Plot No. C-3, Satyajit Roy Sarani, near DCB Bank, Doctor's Colony, City Center",
+    "addressLocality": "Durgapur",
+    "addressRegion": "West Bengal",
+    "postalCode": "713216",
+    "addressCountry": "IN"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.4",
+    "reviewCount": "734"
+  }
+}
+</script>
+
+<style>
+/* ============================================================
+   1. DESIGN TOKENS
+   ============================================================ */
+:root{
+  /* Palette */
+  --ink:        #0b0a09;
+  --ink-soft:   #121010;
+  --ink-3:      #1a1715;
+  --ink-4:      #241f1b;
+  --ivory:      #f7f2e8;
+  --ivory-2:    #efe7d8;
+  --ivory-3:    #ddd2bd;
+  --gold:       #c2a35a;
+  --gold-lt:    #ddc48c;
+  --gold-dk:    #8f7736;
+  --wine:       #5e1b26;
+  --wine-lt:    #7d2a37;
+  --brown:      #3a2b20;
+
+  --line-gold:  rgba(194,163,90,.24);
+  --line-dark:  rgba(247,242,232,.10);
+  --line-light: rgba(11,10,9,.12);
+
+  /* Typography */
+  --ff-display: "Cormorant Garamond", "Times New Roman", serif;
+  --ff-body:    "Jost", "Helvetica Neue", Arial, sans-serif;
+  --ff-bengali: "Noto Serif Bengali", serif;
+
+  /* Spacing */
+  --gutter: clamp(20px, 5vw, 72px);
+  --section-y: clamp(76px, 11vw, 168px);
+  --maxw: 1320px;
+
+  /* Motion */
+  --ease: cubic-bezier(.22,.61,.36,1);
+  --ease-out: cubic-bezier(.16,1,.3,1);
+  --dur: .7s;
+
+  /* Radius — deliberately minimal for a luxury feel */
+  --r-sm: 2px;
+  --r-md: 3px;
+  --r-lg: 4px;
+}
+
+/* ============================================================
+   2. RESET / BASE
+   ============================================================ */
+*,*::before,*::after{ box-sizing:border-box; }
+html{ -webkit-text-size-adjust:100%; scroll-behavior:smooth; }
+body{
+  margin:0;
+  background:var(--ink);
+  color:var(--ivory);
+  font-family:var(--ff-body);
+  font-weight:300;
+  font-size:16px;
+  line-height:1.7;
+  letter-spacing:.01em;
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+img{ max-width:100%; display:block; }
+a{ color:inherit; text-decoration:none; }
+button{ font:inherit; color:inherit; background:none; border:0; cursor:pointer; }
+input,select,textarea{ font:inherit; color:inherit; }
+h1,h2,h3,h4,h5{ margin:0; font-weight:400; }
+p{ margin:0; }
+ul{ margin:0; padding:0; list-style:none; }
+
+::selection{ background:var(--gold); color:var(--ink); }
+
+:focus-visible{
+  outline:1.5px solid var(--gold);
+  outline-offset:3px;
+  border-radius:1px;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar{ width:10px; height:10px; }
+::-webkit-scrollbar-track{ background:var(--ink-soft); }
+::-webkit-scrollbar-thumb{ background:#2e2823; border-radius:10px; }
+::-webkit-scrollbar-thumb:hover{ background:var(--gold-dk); }
+
+/* ============================================================
+   3. UTILITIES
+   ============================================================ */
+.container{
+  width:100%;
+  max-width:var(--maxw);
+  margin-inline:auto;
+  padding-inline:var(--gutter);
+}
+.section{ position:relative; padding-block:var(--section-y); }
+.section--dark{ background:var(--ink); }
+.section--soft{ background:var(--ink-soft); }
+.section--ivory{ background:var(--ivory); color:var(--ink); }
+
+.sr-only{
+  position:absolute; width:1px; height:1px; padding:0; margin:-1px;
+  overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; border:0;
+}
+
+/* Eyebrow label */
+.eyebrow{
+  display:inline-flex; align-items:center; gap:12px;
+  font-size:11px; letter-spacing:.34em; text-transform:uppercase;
+  font-weight:400; color:var(--gold);
+}
+.eyebrow::before{
+  content:""; width:28px; height:1px; background:currentColor; opacity:.7;
+  display:inline-block;
+}
+.eyebrow--center::after{
+  content:""; width:28px; height:1px; background:currentColor; opacity:.7;
+  display:inline-block;
+}
+
+/* Display headings */
+.display{
+  font-family:var(--ff-display);
+  font-weight:300;
+  line-height:1.03;
+  letter-spacing:-.015em;
+  font-size:clamp(2.4rem, 6.4vw, 5.4rem);
+}
+.display--sm{ font-size:clamp(2rem, 4.6vw, 3.6rem); line-height:1.08; }
+.display--xs{ font-size:clamp(1.6rem, 3vw, 2.4rem); line-height:1.15; }
+
+.italic-accent{
+  font-style:italic;
+  color:var(--gold);
+  font-weight:300;
+}
+
+.lede{
+  font-size:clamp(1rem, 1.3vw, 1.12rem);
+  line-height:1.9;
+  color:rgba(247,242,232,.66);
+  max-width:58ch;
+}
+.section--ivory .lede{ color:rgba(11,10,9,.66); }
+
+/* Fine gold divider */
+.rule-gold{
+  height:1px; width:100%;
+  background:linear-gradient(90deg, transparent, var(--line-gold) 20%, var(--line-gold) 80%, transparent);
+  border:0; margin:0;
+}
+
+/* ============================================================
+   4. FILM GRAIN OVERLAY
+   ============================================================ */
+.grain{
+  position:fixed; inset:-50%;
+  width:200%; height:200%;
+  pointer-events:none;
+  z-index:9000;
+  opacity:.035;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  animation:grainShift 8s steps(6) infinite;
+  will-change:transform;
+}
+@keyframes grainShift{
+  0%{transform:translate(0,0)} 20%{transform:translate(-3%,2%)}
+  40%{transform:translate(2%,-3%)} 60%{transform:translate(-2%,-2%)}
+  80%{transform:translate(3%,1%)} 100%{transform:translate(0,0)}
+}
+
+/* ============================================================
+   5. PAGE LOADER
+   ============================================================ */
+#loader{
+  position:fixed; inset:0; z-index:10000;
+  background:var(--ink);
+  display:flex; flex-direction:column; align-items:center; justify-content:center;
+  gap:26px;
+  transition:opacity .8s var(--ease-out), visibility .8s;
+}
+#loader.is-done{ opacity:0; visibility:hidden; pointer-events:none; }
+
+.loader-mark{
+  font-family:var(--ff-display);
+  font-size:clamp(2.4rem,7vw,3.6rem);
+  letter-spacing:.18em;
+  color:var(--ivory);
+  line-height:1;
+  padding-left:.18em;
+}
+.loader-mark span{ color:var(--gold); }
+.loader-word{
+  font-size:10px; letter-spacing:.55em; text-transform:uppercase;
+  color:rgba(247,242,232,.5);
+  padding-left:.55em;
+}
+.loader-bar{
+  width:min(200px, 42vw); height:1px;
+  background:rgba(247,242,232,.14);
+  overflow:hidden;
+}
+.loader-bar i{
+  display:block; height:100%; width:0%;
+  background:linear-gradient(90deg,var(--gold-dk),var(--gold-lt));
+  animation:loadFill 1.35s var(--ease-out) forwards;
+}
+@keyframes loadFill{ to{ width:100%; } }
+
+/* ============================================================
+   6. NAVIGATION
+   ============================================================ */
+.nav{
+  position:fixed; top:0; left:0; right:0; z-index:800;
+  transition:background .5s var(--ease), backdrop-filter .5s var(--ease),
+             border-color .5s var(--ease), padding .45s var(--ease);
+  border-bottom:1px solid transparent;
+  padding-block:clamp(14px, 2vw, 22px);
+}
+.nav::before{
+  content:""; position:absolute; inset:0; z-index:-1;
+  background:rgba(11,10,9,.72);
+  backdrop-filter:blur(16px) saturate(140%);
+  -webkit-backdrop-filter:blur(16px) saturate(140%);
+  opacity:0; transition:opacity .5s var(--ease);
+}
+.nav.is-scrolled{ padding-block:11px; border-bottom-color:var(--line-dark); }
+.nav.is-scrolled::before{ opacity:1; }
+
+.nav__inner{
+  display:flex; align-items:center; justify-content:space-between; gap:24px;
+}
+.nav__brand{ display:flex; align-items:center; gap:13px; flex-shrink:0; }
+.brand-mark{
+  width:42px; height:42px; flex:0 0 42px;
+  border:1px solid var(--line-gold);
+  display:grid; place-items:center;
+  font-family:var(--ff-display);
+  font-size:16px; letter-spacing:.06em;
+  color:var(--gold);
+  background:rgba(194,163,90,.05);
+  transition:background .5s var(--ease), color .5s var(--ease);
+}
+.nav__brand:hover .brand-mark{ background:var(--gold); color:var(--ink); }
+.brand-text{ display:flex; flex-direction:column; line-height:1.1; }
+.brand-text b{
+  font-family:var(--ff-display); font-weight:400;
+  font-size:17px; letter-spacing:.16em; color:var(--ivory);
+}
+.brand-text small{
+  font-size:8.5px; letter-spacing:.34em; text-transform:uppercase;
+  color:rgba(247,242,232,.45); margin-top:3px;
+}
+
+.nav__links{ display:flex; align-items:center; gap:clamp(16px,2.1vw,32px); }
+.nav__link{
+  position:relative;
+  font-size:11px; letter-spacing:.19em; text-transform:uppercase;
+  color:rgba(247,242,232,.72);
+  padding-block:6px;
+  transition:color .35s var(--ease);
+}
+.nav__link::after{
+  content:""; position:absolute; left:0; bottom:0;
+  width:100%; height:1px; background:var(--gold);
+  transform:scaleX(0); transform-origin:right;
+  transition:transform .5s var(--ease-out);
+}
+.nav__link:hover,.nav__link.is-active{ color:var(--ivory); }
+.nav__link:hover::after,.nav__link.is-active::after{
+  transform:scaleX(1); transform-origin:left;
+}
+
+.nav__cta{
+  display:inline-flex; align-items:center; gap:9px;
+  font-size:10.5px; letter-spacing:.2em; text-transform:uppercase;
+  padding:12px 22px;
+  border:1px solid var(--line-gold);
+  color:var(--gold-lt);
+  position:relative; overflow:hidden;
+  transition:color .45s var(--ease), border-color .45s var(--ease);
+}
+.nav__cta span{ position:relative; z-index:2; }
+.nav__cta::before{
+  content:""; position:absolute; inset:0;
+  background:var(--gold);
+  transform:translateY(101%);
+  transition:transform .5s var(--ease-out);
+  z-index:1;
+}
+.nav__cta:hover{ color:var(--ink); border-color:var(--gold); }
+.nav__cta:hover::before{ transform:translateY(0); }
+
+/* Burger */
+.burger{
+  display:none; width:44px; height:44px;
+  align-items:center; justify-content:center;
+  position:relative; z-index:900;
+}
+.burger i{
+  display:block; width:24px; height:1px; background:var(--ivory);
+  position:relative; transition:background .3s;
+}
+.burger i::before,.burger i::after{
+  content:""; position:absolute; left:0; width:24px; height:1px;
+  background:var(--ivory); transition:transform .45s var(--ease-out), top .3s;
+}
+.burger i::before{ top:-7px; }
+.burger i::after{ top:7px; }
+.burger.is-open i{ background:transparent; }
+.burger.is-open i::before{ top:0; transform:rotate(45deg); }
+.burger.is-open i::after{ top:0; transform:rotate(-45deg); }
+
+/* Mobile drawer */
+.drawer{
+  position:fixed; inset:0; z-index:850;
+  background:var(--ink);
+  display:flex; flex-direction:column; justify-content:center;
+  padding:100px var(--gutter) 48px;
+  clip-path:circle(0% at calc(100% - 46px) 42px);
+  transition:clip-path .8s var(--ease-out);
+  visibility:hidden;
+}
+.drawer.is-open{ clip-path:circle(150% at calc(100% - 46px) 42px); visibility:visible; }
+.drawer__links{ display:flex; flex-direction:column; gap:2px; }
+.drawer__link{
+  font-family:var(--ff-display);
+  font-size:clamp(1.9rem, 8.5vw, 2.9rem);
+  line-height:1.35;
+  color:var(--ivory);
+  opacity:0; transform:translateY(24px);
+  transition:opacity .6s var(--ease-out), transform .6s var(--ease-out), color .3s;
+  display:flex; align-items:baseline; gap:14px;
+}
+.drawer__link em{
+  font-style:normal; font-family:var(--ff-body);
+  font-size:10px; letter-spacing:.2em; color:var(--gold); opacity:.7;
+}
+.drawer.is-open .drawer__link{ opacity:1; transform:translateY(0); }
+.drawer__link:hover{ color:var(--gold); }
+.drawer__foot{
+  margin-top:auto; padding-top:38px; border-top:1px solid var(--line-dark);
+  display:flex; flex-wrap:wrap; gap:14px 26px; align-items:center;
+  font-size:12px; letter-spacing:.06em; color:rgba(247,242,232,.55);
+  opacity:0; transition:opacity .6s var(--ease) .45s;
+}
+.drawer.is-open .drawer__foot{ opacity:1; }
+.drawer__foot a:hover{ color:var(--gold); }
+
+/* ============================================================
+   7. BUTTONS
+   ============================================================ */
+.btn{
+  position:relative; display:inline-flex; align-items:center; justify-content:center;
+  gap:11px;
+  padding:16px 32px;
+  font-size:11px; letter-spacing:.22em; text-transform:uppercase; font-weight:400;
+  border:1px solid transparent;
+  overflow:hidden;
+  transition:color .45s var(--ease), border-color .45s var(--ease), transform .3s var(--ease);
+  white-space:nowrap;
+}
+.btn span,.btn svg{ position:relative; z-index:2; }
+.btn svg{ width:14px; height:14px; transition:transform .45s var(--ease-out); }
+.btn:hover svg{ transform:translateX(4px); }
+.btn::before{
+  content:""; position:absolute; inset:0; z-index:1;
+  transition:transform .55s var(--ease-out);
+}
+.btn--gold{ background:var(--gold); color:var(--ink); border-color:var(--gold); }
+.btn--gold::before{ background:var(--ivory); transform:translateY(101%); }
+.btn--gold:hover{ color:var(--ink); }
+.btn--gold:hover::before{ transform:translateY(0); }
+
+.btn--ghost{ border-color:rgba(247,242,232,.28); color:var(--ivory); }
+.btn--ghost::before{ background:var(--ivory); transform:translateY(101%); }
+.btn--ghost:hover{ color:var(--ink); border-color:var(--ivory); }
+.btn--ghost:hover::before{ transform:translateY(0); }
+
+.btn--ghost-dark{ border-color:rgba(11,10,9,.28); color:var(--ink); }
+.btn--ghost-dark::before{ background:var(--ink); transform:translateY(101%); }
+.btn--ghost-dark:hover{ color:var(--ivory); border-color:var(--ink); }
+.btn--ghost-dark:hover::before{ transform:translateY(0); }
+
+.btn--line{
+  padding:10px 0; border:0; border-bottom:1px solid var(--line-gold);
+  color:var(--gold-lt); letter-spacing:.2em;
+}
+.btn--line::before{ display:none; }
+.btn--line:hover{ color:var(--ivory); border-color:var(--ivory); }
+
+.btn:active{ transform:scale(.98); }
+
+/* ============================================================
+   8. HERO
+   ============================================================ */
+.hero{
+  position:relative;
+  min-height:100svh;
+  display:flex; align-items:center;
+  overflow:hidden;
+  isolation:isolate;
+}
+.hero__media{
+  position:absolute; inset:-8% 0 -8% 0;
+  z-index:-2;
+  will-change:transform;
+}
+.hero__media img{
+  width:100%; height:100%; object-fit:cover; object-position:center 55%;
+  transform:scale(1.08);
+  animation:heroZoom 14s var(--ease-out) forwards;
+}
+@keyframes heroZoom{ from{ transform:scale(1.16); } to{ transform:scale(1.02); } }
+
+.hero__scrim{
+  position:absolute; inset:0; z-index:-1;
+  background:
+    linear-gradient(180deg, rgba(11,10,9,.86) 0%, rgba(11,10,9,.42) 34%, rgba(11,10,9,.66) 74%, var(--ink) 100%),
+    radial-gradient(110% 80% at 20% 50%, rgba(11,10,9,.6) 0%, transparent 60%);
+}
+.hero__vignette{
+  position:absolute; inset:0; z-index:-1;
+  background:radial-gradient(120% 100% at 50% 50%, transparent 45%, rgba(11,10,9,.72) 100%);
+}
+
+.hero__inner{
+  position:relative;
+  width:100%;
+  padding-block:clamp(120px, 18vh, 200px) clamp(90px, 14vh, 150px);
+}
+.hero__content{ max-width:min(920px, 92%); }
+
+.hero h1{
+  font-family:var(--ff-display);
+  font-weight:300;
+  font-size:clamp(2.7rem, 8.2vw, 7.2rem);
+  line-height:.98;
+  letter-spacing:-.022em;
+  margin:26px 0 0;
+  color:var(--ivory);
+}
+.hero h1 .line{ display:block; overflow:hidden; }
+.hero h1 .line > span{
+  display:block;
+  transform:translateY(110%);
+  animation:lineUp 1.15s var(--ease-out) forwards;
+}
+.hero h1 .line:nth-child(1) > span{ animation-delay:.55s; }
+.hero h1 .line:nth-child(2) > span{ animation-delay:.68s; }
+@keyframes lineUp{ to{ transform:translateY(0); } }
+
+.hero__eyebrow{
+  opacity:0; animation:fadeUp .9s var(--ease-out) .38s forwards;
+}
+.hero__sub{
+  margin-top:26px; max-width:44ch;
+  font-size:clamp(.98rem, 1.35vw, 1.1rem);
+  line-height:1.85;
+  color:rgba(247,242,232,.72);
+  opacity:0; animation:fadeUp .9s var(--ease-out) .88s forwards;
+}
+.hero__ctas{
+  margin-top:40px;
+  display:flex; flex-wrap:wrap; gap:14px;
+  opacity:0; animation:fadeUp .9s var(--ease-out) 1.02s forwards;
+}
+.hero__meta{
+  margin-top:46px;
+  display:flex; flex-wrap:wrap; align-items:center; gap:14px 30px;
+  font-size:11px; letter-spacing:.2em; text-transform:uppercase;
+  color:rgba(247,242,232,.5);
+  opacity:0; animation:fadeUp .9s var(--ease-out) 1.16s forwards;
+}
+.hero__meta i{
+  display:inline-block; width:5px; height:5px; background:var(--gold);
+  transform:rotate(45deg); margin-right:10px; vertical-align:middle;
+}
+@keyframes fadeUp{ from{opacity:0; transform:translateY(26px);} to{opacity:1; transform:translateY(0);} }
+
+.hero__scroll{
+  position:absolute; left:50%; bottom:26px; transform:translateX(-50%);
+  display:flex; flex-direction:column; align-items:center; gap:10px;
+  font-size:9px; letter-spacing:.34em; text-transform:uppercase;
+  color:rgba(247,242,232,.42);
+  opacity:0; animation:fadeUp 1s var(--ease-out) 1.5s forwards;
+  z-index:3;
+}
+.hero__scroll i{
+  width:1px; height:54px; background:linear-gradient(180deg,var(--gold),transparent);
+  display:block; position:relative; overflow:hidden;
+}
+.hero__scroll i::after{
+  content:""; position:absolute; top:-54px; left:0; width:1px; height:54px;
+  background:var(--gold-lt);
+  animation:scrollDot 2.4s var(--ease) infinite;
+}
+@keyframes scrollDot{ 0%{top:-54px} 60%,100%{top:54px} }
+
+/* ============================================================
+   9. INTRO / EDITORIAL
+   ============================================================ */
+.intro{ background:var(--ivory); color:var(--ink); overflow:hidden; }
+.intro__grid{
+  display:grid;
+  grid-template-columns:1.05fr .95fr;
+  gap:clamp(36px, 6vw, 96px);
+  align-items:center;
+}
+.intro h2{
+  font-family:var(--ff-display); font-weight:300;
+  font-size:clamp(1.9rem, 3.9vw, 3.5rem);
+  line-height:1.14; letter-spacing:-.015em;
+  margin:22px 0 30px;
+  max-width:16ch;
+}
+.intro h2 em{ font-style:italic; color:var(--gold-dk); }
+.intro p + p{ margin-top:20px; }
+
+.intro__stats{
+  margin-top:44px; display:flex; flex-wrap:wrap; gap:34px 52px;
+  padding-top:32px; border-top:1px solid var(--line-light);
+}
+.stat b{
+  display:block;
+  font-family:var(--ff-display); font-size:clamp(1.7rem,3vw,2.4rem);
+  font-weight:400; line-height:1; color:var(--ink);
+}
+.stat span{
+  display:block; margin-top:8px;
+  font-size:10px; letter-spacing:.24em; text-transform:uppercase;
+  color:rgba(11,10,9,.5);
+}
+
+.intro__media{ position:relative; }
+.intro__media figure{
+  margin:0; position:relative; overflow:hidden;
+  aspect-ratio:4/5;
+  border-radius:var(--r-md);
+}
+.intro__media img{
+  width:100%; height:100%; object-fit:cover;
+  transition:transform 1.4s var(--ease-out);
+}
+.intro__media:hover img{ transform:scale(1.045); }
+.intro__media::after{
+  content:""; position:absolute; inset:14px -14px -14px 14px;
+  border:1px solid var(--line-gold); z-index:-1; pointer-events:none;
+}
+.intro__badge{
+  position:absolute; left:-1px; bottom:-1px;
+  background:var(--ink); color:var(--ivory);
+  padding:20px 26px;
+  display:flex; flex-direction:column; gap:3px;
+}
+.intro__badge b{
+  font-family:var(--ff-display); font-size:1.5rem; font-weight:400;
+  color:var(--gold-lt); line-height:1;
+}
+.intro__badge span{
+  font-size:9px; letter-spacing:.24em; text-transform:uppercase;
+  color:rgba(247,242,232,.55);
+}
+
+/* Bengali motif */
+.motif{
+  position:absolute; pointer-events:none; opacity:.06;
+  color:var(--ink);
+}
+.motif--intro{ width:min(340px,42vw); right:-4%; top:6%; }
+
+/* ============================================================
+   10. SIGNATURE DISHES
+   ============================================================ */
+.signatures{ background:var(--ink); overflow:hidden; }
+.sec-head{
+  display:flex; flex-wrap:wrap; align-items:flex-end;
+  justify-content:space-between; gap:26px;
+  margin-bottom:clamp(38px, 5vw, 68px);
+}
+.sec-head h2{
+  font-family:var(--ff-display); font-weight:300;
+  font-size:clamp(2.1rem, 5.2vw, 4.4rem);
+  line-height:1.02; letter-spacing:-.02em;
+  margin-top:20px;
+}
+
+.dishes{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:clamp(14px, 2vw, 26px);
+}
+.dish{
+  position:relative; overflow:hidden;
+  aspect-ratio:3/4;
+  display:block;
+  border-radius:var(--r-md);
+  background:var(--ink-3);
+}
+.dish img{
+  position:absolute; inset:0; width:100%; height:100%; object-fit:cover;
+  transition:transform 1.5s var(--ease-out), filter .8s var(--ease);
+  filter:saturate(.92) brightness(.86);
+}
+.dish::after{
+  content:""; position:absolute; inset:0;
+  background:linear-gradient(180deg, rgba(11,10,9,.05) 0%, rgba(11,10,9,.18) 45%, rgba(11,10,9,.9) 100%);
+  transition:opacity .7s var(--ease);
+}
+.dish:hover img{ transform:scale(1.07); filter:saturate(1) brightness(.95); }
+
+.dish__body{
+  position:absolute; left:0; right:0; bottom:0; z-index:3;
+  padding:clamp(18px,2.2vw,28px);
+  transition:transform .65s var(--ease-out);
+}
+.dish:hover .dish__body{ transform:translateY(-6px); }
+.dish__tag{
+  font-size:9.5px; letter-spacing:.3em; text-transform:uppercase;
+  color:var(--gold-lt); opacity:.9;
+}
+.dish__name{
+  font-family:var(--ff-display); font-size:clamp(1.3rem,2.1vw,1.85rem);
+  font-weight:400; line-height:1.15; margin-top:10px; color:var(--ivory);
+}
+.dish__desc{
+  font-size:12.5px; line-height:1.6; color:rgba(247,242,232,.6);
+  margin-top:9px;
+  max-height:0; opacity:0; overflow:hidden;
+  transition:max-height .6s var(--ease-out), opacity .5s var(--ease), margin .5s;
+}
+.dish:hover .dish__desc,
+.dish:focus-visible .dish__desc{ max-height:80px; opacity:1; }
+.dish__line{
+  height:1px; width:34px; background:var(--gold);
+  margin-top:14px; transform-origin:left;
+  transform:scaleX(0); transition:transform .6s var(--ease-out) .05s;
+}
+.dish:hover .dish__line,
+.dish:focus-visible .dish__line{ transform:scaleX(1); width:62px; }
+
+/* ============================================================
+   11. MENU
+   ============================================================ */
+.menu{ background:var(--ink-soft); }
+.menu__tabs{
+  display:flex; gap:6px; overflow-x:auto;
+  padding-bottom:16px; margin-bottom:clamp(30px,4vw,54px);
+  border-bottom:1px solid var(--line-dark);
+  scrollbar-width:none;
+}
+.menu__tabs::-webkit-scrollbar{ display:none; }
+.tab{
+  position:relative; flex:0 0 auto;
+  padding:11px 18px;
+  font-size:10.5px; letter-spacing:.2em; text-transform:uppercase;
+  color:rgba(247,242,232,.5);
+  transition:color .35s var(--ease);
+  white-space:nowrap;
+}
+.tab::after{
+  content:""; position:absolute; left:14px; right:14px; bottom:-17px;
+  height:1px; background:var(--gold);
+  transform:scaleX(0); transform-origin:center;
+  transition:transform .5s var(--ease-out);
+}
+.tab:hover{ color:var(--ivory); }
+.tab.is-active{ color:var(--gold-lt); }
+.tab.is-active::after{ transform:scaleX(1); }
+
+.menu__panel{ animation:panelIn .55s var(--ease-out); }
+@keyframes panelIn{ from{opacity:0; transform:translateY(14px);} to{opacity:1; transform:translateY(0);} }
+
+.menu__list{
+  display:grid;
+  grid-template-columns:repeat(2, minmax(0,1fr));
+  gap:0 clamp(34px, 5vw, 84px);
+}
+.mitem{
+  display:flex; align-items:baseline; gap:16px;
+  padding:22px 0;
+  border-bottom:1px solid var(--line-dark);
+  transition:padding-left .45s var(--ease-out);
+  opacity:0; transform:translateY(12px);
+  animation:itemIn .6s var(--ease-out) forwards;
+}
+@keyframes itemIn{ to{opacity:1; transform:translateY(0);} }
+.mitem:hover{ padding-left:8px; }
+.mitem__text{ flex:1 1 auto; min-width:0; }
+.mitem__name{
+  font-family:var(--ff-display);
+  font-size:clamp(1.12rem,1.6vw,1.4rem);
+  font-weight:400; line-height:1.25; color:var(--ivory);
+  transition:color .35s var(--ease);
+}
+.mitem:hover .mitem__name{ color:var(--gold-lt); }
+.mitem__desc{
+  font-size:12.5px; line-height:1.6;
+  color:rgba(247,242,232,.45);
+  margin-top:6px;
+}
+.mitem__price{
+  flex:0 0 auto;
+  font-family:var(--ff-display); font-size:1.05rem;
+  color:var(--gold); letter-spacing:.02em;
+  padding-top:2px;
+}
+.mitem__price--soft{
+  font-family:var(--ff-body);
+  font-size:9.5px; letter-spacing:.24em; text-transform:uppercase;
+  color:rgba(194,163,90,.6);
+}
+
+.menu__empty{
+  grid-column:1/-1;
+  text-align:center; padding:clamp(40px,7vw,84px) 20px;
+  border:1px solid var(--line-dark);
+  background:rgba(247,242,232,.015);
+}
+.menu__empty h3{
+  font-family:var(--ff-display); font-size:clamp(1.4rem,2.6vw,2rem);
+  font-weight:400; color:var(--ivory);
+}
+.menu__empty p{
+  margin:14px auto 26px; max-width:46ch;
+  font-size:14px; color:rgba(247,242,232,.55); line-height:1.8;
+}
+.menu__note{
+  margin-top:44px; padding-top:26px; border-top:1px solid var(--line-dark);
+  font-size:12px; letter-spacing:.05em; color:rgba(247,242,232,.4);
+  display:flex; flex-wrap:wrap; gap:10px 26px; justify-content:space-between;
+}
+
+/* ============================================================
+   12. EXPERIENCE
+   ============================================================ */
+.experience{ background:var(--ivory); color:var(--ink); }
+.exp-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:0;
+  border-top:1px solid var(--line-light);
+  border-left:1px solid var(--line-light);
+  margin-top:clamp(34px,4.5vw,58px);
+}
+.exp-item{
+  padding:clamp(24px,2.6vw,38px) clamp(20px,2.2vw,32px);
+  border-right:1px solid var(--line-light);
+  border-bottom:1px solid var(--line-light);
+  transition:background .5s var(--ease);
+  position:relative;
+}
+.exp-item::before{
+  content:""; position:absolute; left:0; top:0; height:1px; width:100%;
+  background:var(--gold); transform:scaleX(0); transform-origin:left;
+  transition:transform .6s var(--ease-out);
+}
+.exp-item:hover{ background:rgba(194,163,90,.06); }
+.exp-item:hover::before{ transform:scaleX(1); }
+.exp-item svg{
+  width:22px; height:22px; stroke:var(--gold-dk); stroke-width:1.2;
+  fill:none; stroke-linecap:round; stroke-linejoin:round;
+  transition:transform .5s var(--ease-out);
+}
+.exp-item:hover svg{ transform:translateY(-3px); }
+.exp-item h3{
+  font-family:var(--ff-display); font-size:1.25rem; font-weight:500;
+  margin-top:20px; letter-spacing:.01em;
+}
+.exp-item p{
+  margin-top:9px; font-size:12.5px; line-height:1.7;
+  color:rgba(11,10,9,.55);
+}
+
+.exp-foot{
+  margin-top:clamp(38px,5vw,62px);
+  display:flex; flex-wrap:wrap; align-items:center;
+  justify-content:space-between; gap:28px;
+}
+.exp-foot p{
+  font-family:var(--ff-display);
+  font-size:clamp(1.15rem,2vw,1.6rem);
+  font-style:italic; color:var(--ink); max-width:34ch; line-height:1.4;
+}
+.tags{ display:flex; flex-wrap:wrap; gap:10px; }
+.tag{
+  font-size:9.5px; letter-spacing:.24em; text-transform:uppercase;
+  padding:9px 17px; border:1px solid var(--line-light);
+  color:rgba(11,10,9,.6);
+  transition:all .4s var(--ease);
+}
+.tag:hover{ border-color:var(--gold); color:var(--gold-dk); background:rgba(194,163,90,.07); }
+
+/* ============================================================
+   13. GALLERY
+   ============================================================ */
+.gallery{ background:var(--ink); }
+.masonry{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  grid-auto-rows:clamp(130px, 15vw, 210px);
+  gap:clamp(10px, 1.2vw, 16px);
+  margin-top:clamp(34px,4.5vw,58px);
+}
+.gitem{
+  position:relative; overflow:hidden; cursor:pointer;
+  border-radius:var(--r-md);
+  background:var(--ink-3);
+  display:block; width:100%; height:100%;
+  padding:0; border:0;
+}
+.gitem img{
+  width:100%; height:100%; object-fit:cover;
+  transition:transform 1.5s var(--ease-out), filter .7s var(--ease);
+  filter:brightness(.82) saturate(.95);
+}
+.gitem::after{
+  content:""; position:absolute; inset:0;
+  background:linear-gradient(180deg,transparent 40%, rgba(11,10,9,.85) 100%);
+  opacity:0; transition:opacity .6s var(--ease);
+}
+.gitem:hover img,.gitem:focus-visible img{ transform:scale(1.07); filter:brightness(.95) saturate(1.05); }
+.gitem:hover::after,.gitem:focus-visible::after{ opacity:1; }
+.gitem__cap{
+  position:absolute; left:0; right:0; bottom:0; z-index:2;
+  padding:20px;
+  text-align:left;
+  transform:translateY(10px); opacity:0;
+  transition:transform .6s var(--ease-out), opacity .5s var(--ease);
+}
+.gitem:hover .gitem__cap,.gitem:focus-visible .gitem__cap{ transform:translateY(0); opacity:1; }
+.gitem__cap b{
+  display:block; font-family:var(--ff-display); font-weight:400;
+  font-size:1.1rem; color:var(--ivory);
+}
+.gitem__cap span{
+  display:block; margin-top:4px;
+  font-size:9px; letter-spacing:.26em; text-transform:uppercase; color:var(--gold-lt);
+}
+.g-a{ grid-column:span 2; grid-row:span 2; }
+.g-b{ grid-column:span 1; grid-row:span 1; }
+.g-c{ grid-column:span 1; grid-row:span 2; }
+.g-d{ grid-column:span 2; grid-row:span 1; }
+
+/* Lightbox */
+.lightbox{
+  position:fixed; inset:0; z-index:9500;
+  background:rgba(6,5,5,.96);
+  backdrop-filter:blur(6px);
+  display:flex; align-items:center; justify-content:center;
+  padding:clamp(16px,4vw,56px);
+  opacity:0; visibility:hidden;
+  transition:opacity .45s var(--ease), visibility .45s;
+}
+.lightbox.is-open{ opacity:1; visibility:visible; }
+.lightbox__fig{
+  margin:0; max-width:min(1180px,100%); max-height:100%;
+  display:flex; flex-direction:column; gap:16px;
+  transform:scale(.96); opacity:0;
+  transition:transform .6s var(--ease-out) .06s, opacity .5s var(--ease) .06s;
+}
+.lightbox.is-open .lightbox__fig{ transform:scale(1); opacity:1; }
+.lightbox__fig img{
+  max-height:76vh; width:auto; margin-inline:auto;
+  object-fit:contain; border-radius:var(--r-sm);
+}
+.lightbox__cap{
+  display:flex; align-items:baseline; justify-content:space-between; gap:20px;
+  font-size:11px; letter-spacing:.2em; text-transform:uppercase;
+  color:rgba(247,242,232,.6);
+}
+.lightbox__cap b{
+  font-family:var(--ff-display); font-size:1.25rem; font-weight:400;
+  letter-spacing:.01em; text-transform:none; color:var(--ivory);
+}
+.lb-btn{
+  position:absolute; z-index:3;
+  width:52px; height:52px;
+  display:grid; place-items:center;
+  border:1px solid rgba(247,242,232,.2);
+  color:var(--ivory); border-radius:999px;
+  transition:background .35s var(--ease), color .35s var(--ease), border-color .35s;
+}
+.lb-btn:hover{ background:var(--gold); color:var(--ink); border-color:var(--gold); }
+.lb-btn svg{ width:18px; height:18px; stroke:currentColor; fill:none; stroke-width:1.4; }
+.lb-close{ top:clamp(16px,3vw,30px); right:clamp(16px,3vw,30px); }
+.lb-prev{ left:clamp(10px,2.4vw,30px); top:50%; transform:translateY(-50%); }
+.lb-next{ right:clamp(10px,2.4vw,30px); top:50%; transform:translateY(-50%); }
+
+/* ============================================================
+   14. OUR STORY
+   ============================================================ */
+.story{ background:var(--ink-soft); overflow:hidden; }
+.story__grid{
+  display:grid; grid-template-columns:.92fr 1.08fr;
+  gap:clamp(36px,6vw,96px); align-items:center;
+}
+.story__media{ position:relative; }
+.story__media figure{
+  margin:0; overflow:hidden; aspect-ratio:4/5;
+  border-radius:var(--r-md);
+}
+.story__media img{
+  width:100%; height:100%; object-fit:cover;
+  transition:transform 1.5s var(--ease-out);
+}
+.story__media:hover img{ transform:scale(1.05); }
+
+.timeline{
+  margin-top:44px;
+  display:flex; flex-direction:column; gap:0;
+  position:relative;
+}
+.timeline::before{
+  content:""; position:absolute; left:5px; top:8px; bottom:8px; width:1px;
+  background:linear-gradient(180deg, var(--gold), rgba(194,163,90,.12));
+}
+.tl{
+  position:relative; padding:0 0 26px 30px;
+}
+.tl:last-child{ padding-bottom:0; }
+.tl::before{
+  content:""; position:absolute; left:0; top:7px;
+  width:11px; height:11px; border:1px solid var(--gold);
+  transform:rotate(45deg); background:var(--ink-soft);
+}
+.tl b{
+  display:block; font-size:10px; letter-spacing:.32em; text-transform:uppercase;
+  color:var(--gold-lt);
+}
+.tl span{
+  display:block; margin-top:6px;
+  font-size:13px; line-height:1.7; color:rgba(247,242,232,.5);
+  max-width:44ch;
+}
+
+/* ============================================================
+   15. REVIEWS
+   ============================================================ */
+.reviews{ background:var(--ink); }
+.reviews__grid{
+  display:grid; grid-template-columns:.85fr 1.15fr;
+  gap:clamp(36px,6vw,90px); align-items:center;
+  margin-top:clamp(34px,4.5vw,58px);
+}
+.rating-block{ text-align:left; }
+.rating-num{
+  font-family:var(--ff-display);
+  font-size:clamp(4rem, 11vw, 8rem);
+  line-height:.86; font-weight:300;
+  color:var(--ivory);
+}
+.rating-num sup{
+  font-size:.3em; color:var(--gold); vertical-align:super;
+  letter-spacing:0;
+}
+.stars{ display:flex; gap:6px; margin-top:20px; }
+.stars svg{
+  width:17px; height:17px; fill:var(--gold);
+  opacity:0; transform:scale(.5) rotate(-25deg);
+  animation:starPop .55s var(--ease-out) forwards;
+}
+.stars svg:nth-child(1){ animation-delay:.15s }
+.stars svg:nth-child(2){ animation-delay:.25s }
+.stars svg:nth-child(3){ animation-delay:.35s }
+.stars svg:nth-child(4){ animation-delay:.45s }
+.stars svg:nth-child(5){ animation-delay:.55s; fill:rgba(194,163,90,.32); }
+@keyframes starPop{ to{ opacity:1; transform:scale(1) rotate(0); } }
+.rating-count{
+  margin-top:16px; font-size:11px; letter-spacing:.22em; text-transform:uppercase;
+  color:rgba(247,242,232,.45);
+}
+
+.review-quote{
+  border-left:1px solid var(--line-gold);
+  padding-left:clamp(22px,3vw,40px);
+}
+.review-quote blockquote{
+  margin:0;
+  font-family:var(--ff-display);
+  font-size:clamp(1.3rem, 2.6vw, 2rem);
+  line-height:1.48; font-style:italic; font-weight:300;
+  color:rgba(247,242,232,.9);
+}
+.review-quote figcaption{
+  margin-top:26px;
+  display:flex; align-items:center; gap:14px;
+  font-size:11px; letter-spacing:.2em; text-transform:uppercase;
+  color:rgba(247,242,232,.5);
+}
+.review-quote figcaption i{
+  width:5px; height:5px; background:var(--gold); transform:rotate(45deg);
+  display:inline-block;
+}
+
+/* ============================================================
+   16. RESERVATION
+   ============================================================ */
+.reserve{
+  position:relative;
+  background:var(--ink-soft);
+  overflow:hidden;
+}
+.reserve__bg{
+  position:absolute; inset:0; z-index:0; opacity:.16;
+}
+.reserve__bg img{ width:100%; height:100%; object-fit:cover; }
+.reserve .container{ position:relative; z-index:2; }
+.reserve__grid{
+  display:grid; grid-template-columns:.9fr 1.1fr;
+  gap:clamp(36px,6vw,90px);
+  align-items:start;
+}
+.reserve h2{
+  font-family:var(--ff-display); font-weight:300;
+  font-size:clamp(2.2rem,5.4vw,4.2rem);
+  line-height:1.03; letter-spacing:-.02em;
+  margin-top:22px;
+}
+.reserve__aside p{
+  margin-top:24px; max-width:38ch;
+  color:rgba(247,242,232,.6); font-size:14.5px; line-height:1.9;
+}
+.reserve__contact{
+  margin-top:36px; padding-top:28px; border-top:1px solid var(--line-dark);
+  display:flex; flex-direction:column; gap:14px;
+  font-size:13px; color:rgba(247,242,232,.62);
+}
+.reserve__contact a{ transition:color .3s; }
+.reserve__contact a:hover{ color:var(--gold-lt); }
+
+.form{
+  border:1px solid var(--line-dark);
+  padding:clamp(24px,3.4vw,48px);
+  background:rgba(11,10,9,.42);
+  backdrop-filter:blur(4px);
+}
+.form__row{
+  display:grid; grid-template-columns:1fr 1fr;
+  gap:clamp(16px,2vw,26px);
+}
+.field{ position:relative; margin-bottom:24px; }
+.field label{
+  display:block;
+  font-size:9.5px; letter-spacing:.26em; text-transform:uppercase;
+  color:rgba(247,242,232,.45); margin-bottom:10px;
+}
+.field input,.field select,.field textarea{
+  width:100%;
+  background:transparent;
+  border:0; border-bottom:1px solid rgba(247,242,232,.16);
+  padding:11px 0;
+  font-size:15px; font-weight:300;
+  color:var(--ivory);
+  border-radius:0;
+  transition:border-color .4s var(--ease);
+  appearance:none; -webkit-appearance:none;
+}
+.field select{
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23c2a35a' fill='none' stroke-width='1.2'/%3E%3C/svg%3E");
+  background-repeat:no-repeat; background-position:right 2px center;
+  padding-right:24px;
+}
+.field select option{ background:var(--ink-3); color:var(--ivory); }
+.field input:focus,.field select:focus,.field textarea:focus{
+  outline:none; border-bottom-color:var(--gold);
+}
+.field input::placeholder{ color:rgba(247,242,232,.28); }
+.field input[type="date"],.field input[type="time"]{ color-scheme:dark; }
+.field.has-error input,.field.has-error select{ border-bottom-color:#c2564f; }
+.field__err{
+  display:block; margin-top:8px;
+  font-size:10.5px; letter-spacing:.1em; color:#d9776f;
+  opacity:0; max-height:0; transition:opacity .3s, max-height .3s;
+}
+.field.has-error .field__err{ opacity:1; max-height:30px; }
+
+.form__submit{ width:100%; margin-top:8px; }
+.form__hint{
+  margin-top:18px; font-size:11px; line-height:1.7;
+  color:rgba(247,242,232,.35); text-align:center;
+}
+
+.form-success{
+  text-align:center; padding:clamp(30px,5vw,60px) 10px;
+  animation:panelIn .6s var(--ease-out);
+}
+.form-success svg{
+  width:44px; height:44px; stroke:var(--gold); fill:none; stroke-width:1;
+  margin-inline:auto;
+}
+.form-success h3{
+  font-family:var(--ff-display); font-size:clamp(1.6rem,3vw,2.3rem);
+  font-weight:400; margin-top:22px; color:var(--ivory);
+}
+.form-success p{
+  margin:14px auto 0; max-width:42ch;
+  font-size:14px; line-height:1.85; color:rgba(247,242,232,.6);
+}
+.form-success .btn{ margin-top:30px; }
+
+/* ============================================================
+   17. LOCATION
+   ============================================================ */
+.location{ background:var(--ivory); color:var(--ink); }
+.loc__grid{
+  display:grid; grid-template-columns:1fr 1fr;
+  gap:clamp(32px,5vw,76px); align-items:stretch;
+  margin-top:clamp(34px,4.5vw,58px);
+}
+.loc__info h3{
+  font-family:var(--ff-display); font-size:clamp(1.5rem,2.6vw,2.1rem);
+  font-weight:400; line-height:1.25; margin-bottom:26px; max-width:20ch;
+}
+.loc__addr{
+  font-size:15px; line-height:2; color:rgba(11,10,9,.68);
+  border-left:1px solid var(--line-light);
+  padding-left:22px;
+}
+.loc__addr b{ color:var(--ink); font-weight:500; }
+.loc__rows{ margin-top:34px; display:flex; flex-direction:column; gap:0; }
+.loc__row{
+  display:flex; align-items:center; justify-content:space-between; gap:20px;
+  padding:18px 0; border-top:1px solid var(--line-light);
+  font-size:13px;
+}
+.loc__row span{ font-size:10px; letter-spacing:.24em; text-transform:uppercase; color:rgba(11,10,9,.45); }
+.loc__row a,.loc__row strong{ font-weight:400; color:var(--ink); transition:color .3s; }
+.loc__row a:hover{ color:var(--gold-dk); }
+.loc__actions{ margin-top:34px; display:flex; flex-wrap:wrap; gap:12px; }
+
+.map{
+  position:relative; min-height:380px;
+  border:1px solid var(--line-light);
+  overflow:hidden;
+  background:
+    linear-gradient(rgba(11,10,9,.045) 1px, transparent 1px) 0 0/100% 46px,
+    linear-gradient(90deg, rgba(11,10,9,.045) 1px, transparent 1px) 0 0/46px 100%,
+    linear-gradient(150deg,#eee5d5,#e3d8c2 60%,#ddd0b6);
+  display:flex; align-items:center; justify-content:center;
+  text-decoration:none;
+}
+.map::before,.map::after{
+  content:""; position:absolute; background:rgba(11,10,9,.08);
+}
+.map::before{ left:0; right:0; top:38%; height:16px; }
+.map::after{ top:0; bottom:0; left:56%; width:12px; }
+.map__pin{
+  position:relative; z-index:3; text-align:center;
+  background:rgba(247,242,232,.9);
+  border:1px solid var(--line-light);
+  padding:22px 28px;
+  backdrop-filter:blur(4px);
+  transition:transform .5s var(--ease-out);
+}
+.map:hover .map__pin{ transform:translateY(-5px); }
+.map__pin b{
+  display:block; font-family:var(--ff-display); font-size:1.2rem;
+  font-weight:500; color:var(--ink);
+}
+.map__pin span{
+  display:block; margin-top:6px;
+  font-size:9.5px; letter-spacing:.24em; text-transform:uppercase;
+  color:rgba(11,10,9,.5);
+}
+.map__pin i{
+  display:block; width:9px; height:9px; background:var(--wine);
+  border-radius:50%; margin:0 auto 14px;
+  box-shadow:0 0 0 0 rgba(94,27,38,.5);
+  animation:pinPulse 2.4s var(--ease) infinite;
+}
+@keyframes pinPulse{
+  0%{ box-shadow:0 0 0 0 rgba(94,27,38,.42); }
+  70%{ box-shadow:0 0 0 18px rgba(94,27,38,0); }
+  100%{ box-shadow:0 0 0 0 rgba(94,27,38,0); }
+}
+.map__hint{
+  position:absolute; bottom:16px; left:50%; transform:translateX(-50%);
+  font-size:9.5px; letter-spacing:.24em; text-transform:uppercase;
+  color:rgba(11,10,9,.42); z-index:3; white-space:nowrap;
+}
+
+/* ============================================================
+   18. FOOTER
+   ============================================================ */
+.footer{
+  background:var(--ink);
+  border-top:1px solid var(--line-dark);
+  padding-top:clamp(60px,8vw,110px);
+  overflow:hidden;
+}
+.footer__top{
+  display:grid;
+  grid-template-columns:1.5fr 1fr 1fr 1.2fr;
+  gap:clamp(28px,4vw,56px);
+  padding-bottom:clamp(48px,6vw,80px);
+}
+.footer__brand .brand-text b{ font-size:20px; }
+.footer__brand p{
+  margin-top:22px; max-width:32ch;
+  font-size:14px; line-height:1.85; color:rgba(247,242,232,.5);
+}
+.footer__social{
+  margin-top:26px; display:flex; gap:10px;
+}
+.footer__social a{
+  width:40px; height:40px; display:grid; place-items:center;
+  border:1px solid var(--line-dark);
+  transition:all .4s var(--ease);
+}
+.footer__social a:hover{
+  border-color:var(--gold); color:var(--gold); transform:translateY(-3px);
+}
+.footer__social svg{
+  width:16px; height:16px; fill:none; stroke:currentColor; stroke-width:1.3;
+}
+.footer__col h4{
+  font-size:10px; letter-spacing:.3em; text-transform:uppercase;
+  color:var(--gold); margin-bottom:22px; font-weight:400;
+}
+.footer__col ul{ display:flex; flex-direction:column; gap:12px; }
+.footer__col a,.footer__col li{
+  font-size:13.5px; color:rgba(247,242,232,.55);
+  transition:color .3s var(--ease);
+}
+.footer__col a:hover{ color:var(--gold-lt); }
+.footer__col address{
+  font-style:normal; font-size:13.5px; line-height:1.95;
+  color:rgba(247,242,232,.55);
+}
+.footer__cta{
+  margin-top:26px; width:100%;
+}
+
+.footer__wordmark{
+  font-family:var(--ff-display);
+  font-size:clamp(2.6rem, 15vw, 13rem);
+  line-height:.82;
+  letter-spacing:-.03em;
+  color:transparent;
+  -webkit-text-stroke:1px rgba(194,163,90,.16);
+  text-align:center;
+  padding-block:clamp(14px,2vw,28px);
+  user-select:none;
+  white-space:nowrap;
+  overflow:hidden;
+}
+.footer__bottom{
+  border-top:1px solid var(--line-dark);
+  padding-block:26px 90px;
+  display:flex; flex-wrap:wrap; gap:12px 26px;
+  align-items:center; justify-content:space-between;
+  font-size:11px; letter-spacing:.09em;
+  color:rgba(247,242,232,.36);
+}
+.footer__bottom a:hover{ color:var(--gold-lt); }
+.demo-badge{
+  display:inline-flex; align-items:center; gap:8px;
+  border:1px solid var(--line-dark);
+  padding:6px 12px;
+  font-size:9px; letter-spacing:.2em; text-transform:uppercase;
+  color:rgba(247,242,232,.34);
+}
+.demo-badge i{
+  width:5px; height:5px; border-radius:50%; background:var(--gold);
+  display:inline-block; opacity:.7;
+}
+
+/* ============================================================
+   19. FLOATING UI
+   ============================================================ */
+.to-top{
+  position:fixed; right:clamp(16px,2.4vw,32px); bottom:clamp(20px,3vw,34px);
+  z-index:700;
+  width:46px; height:46px; border-radius:999px;
+  display:grid; place-items:center;
+  border:1px solid var(--line-gold);
+  background:rgba(11,10,9,.72);
+  backdrop-filter:blur(10px);
+  color:var(--gold-lt);
+  opacity:0; visibility:hidden; transform:translateY(14px);
+  transition:all .5s var(--ease-out);
+}
+.to-top.is-visible{ opacity:1; visibility:visible; transform:translateY(0); }
+.to-top:hover{ background:var(--gold); color:var(--ink); border-color:var(--gold); }
+.to-top svg{ width:16px; height:16px; stroke:currentColor; fill:none; stroke-width:1.4; }
+
+/* Mobile bottom CTA bar */
+.mobile-bar{
+  position:fixed; left:0; right:0; bottom:0; z-index:780;
+  display:none;
+  grid-template-columns:repeat(3,1fr);
+  background:rgba(11,10,9,.94);
+  backdrop-filter:blur(14px);
+  border-top:1px solid var(--line-dark);
+  padding-bottom:env(safe-area-inset-bottom, 0);
+  transform:translateY(102%);
+  transition:transform .55s var(--ease-out);
+}
+.mobile-bar.is-visible{ transform:translateY(0); }
+.mobile-bar a{
+  display:flex; flex-direction:column; align-items:center; gap:5px;
+  padding:12px 6px 11px;
+  font-size:9px; letter-spacing:.2em; text-transform:uppercase;
+  color:rgba(247,242,232,.7);
+  border-right:1px solid var(--line-dark);
+}
+.mobile-bar a:last-child{ border-right:0; }
+.mobile-bar a:active{ background:rgba(194,163,90,.1); }
+.mobile-bar svg{
+  width:17px; height:17px; stroke:var(--gold); fill:none; stroke-width:1.3;
+}
+.mobile-bar a.is-accent{ color:var(--ink); background:var(--gold); }
+.mobile-bar a.is-accent svg{ stroke:var(--ink); }
+
+/* Toast */
+.toast{
+  position:fixed; left:50%; bottom:32px; z-index:9600;
+  transform:translate(-50%, 24px);
+  background:var(--ink-3);
+  border:1px solid var(--line-gold);
+  color:var(--ivory);
+  padding:16px 24px;
+  font-size:12.5px; letter-spacing:.04em;
+  max-width:min(420px, calc(100vw - 32px));
+  text-align:center;
+  opacity:0; visibility:hidden;
+  transition:all .5s var(--ease-out);
+  box-shadow:0 20px 50px rgba(0,0,0,.5);
+}
+.toast.is-visible{ opacity:1; visibility:visible; transform:translate(-50%,0); }
+.toast b{ color:var(--gold-lt); font-weight:400; }
+
+/* ============================================================
+   20. CUSTOM CURSOR (desktop only)
+   ============================================================ */
+.cursor,.cursor-dot{
+  position:fixed; top:0; left:0; z-index:9800;
+  pointer-events:none; border-radius:999px;
+  mix-blend-mode:difference;
+}
+.cursor{
+  width:34px; height:34px; border:1px solid rgba(247,242,232,.6);
+  transition:width .35s var(--ease), height .35s var(--ease),
+             background .35s var(--ease), border-color .35s var(--ease),
+             opacity .3s;
+  transform:translate(-50%,-50%);
+}
+.cursor-dot{
+  width:4px; height:4px; background:var(--gold);
+  transform:translate(-50%,-50%);
+}
+.cursor.is-hover{
+  width:64px; height:64px;
+  background:rgba(247,242,232,.9);
+  border-color:transparent;
+}
+@media (hover:none),(pointer:coarse){
+  .cursor,.cursor-dot{ display:none !important; }
+}
+
+/* ============================================================
+   21. IMAGE FALLBACK
+   ============================================================ */
+.img-fallback{
+  background:
+    radial-gradient(120% 90% at 30% 20%, #2a221b 0%, #16120f 60%, #0d0b0a 100%);
+  position:relative;
+}
+.img-fallback::after{
+  content:"KOSHE KOSHA";
+  position:absolute; inset:0;
+  display:grid; place-items:center;
+  font-family:var(--ff-display); font-size:.8rem;
+  letter-spacing:.4em; color:rgba(194,163,90,.35);
+}
+.section--ivory .img-fallback{
+  background:radial-gradient(120% 90% at 30% 20%, #e6dbc6 0%, #d8cbb2 70%, #cbbda1 100%);
+}
+
+/* ============================================================
+   22. SCROLL REVEAL
+   ============================================================ */
+[data-reveal]{
+  opacity:0; transform:translateY(30px);
+  transition:opacity 1s var(--ease-out), transform 1s var(--ease-out);
+}
+[data-reveal].is-in{ opacity:1; transform:none; }
+[data-reveal="clip"]{
+  opacity:1; transform:none;
+  clip-path:inset(0 0 100% 0);
+  transition:clip-path 1.2s var(--ease-out);
+}
+[data-reveal="clip"].is-in{ clip-path:inset(0 0 0 0); }
+[data-reveal="right"]{ transform:translateX(36px); }
+[data-reveal="right"].is-in{ transform:none; }
+[data-delay="1"]{ transition-delay:.09s; }
+[data-delay="2"]{ transition-delay:.18s; }
+[data-delay="3"]{ transition-delay:.27s; }
+[data-delay="4"]{ transition-delay:.36s; }
+[data-delay="5"]{ transition-delay:.45s; }
+
+/* ============================================================
+   23. RESPONSIVE
+   ============================================================ */
+@media (max-width:1180px){
+  .exp-grid{ grid-template-columns:repeat(2,1fr); }
+  .footer__top{ grid-template-columns:1.4fr 1fr 1fr; }
+  .footer__col--cta{ grid-column:1 / -1; }
+}
+
+@media (max-width:1024px){
+  .nav__links{ display:none; }
+  .nav__cta{ display:none; }
+  .burger{ display:flex; }
+
+  .intro__grid,
+  .story__grid,
+  .reserve__grid,
+  .reviews__grid,
+  .loc__grid{ grid-template-columns:1fr; gap:clamp(34px,6vw,54px); }
+
+  .intro__media{ order:-1; }
+  .intro__media figure{ aspect-ratio:16/11; }
+  .story__media figure{ aspect-ratio:16/11; }
+  .intro__media::after{ display:none; }
+
+  .dishes{ grid-template-columns:repeat(2,1fr); }
+  .menu__list{ grid-template-columns:1fr; }
+  .masonry{ grid-template-columns:repeat(2,1fr); }
+  .g-a{ grid-column:span 2; grid-row:span 2; }
+  .g-c{ grid-row:span 1; }
+  .g-d{ grid-column:span 2; }
+
+  .review-quote{ border-left:0; padding-left:0; border-top:1px solid var(--line-gold); padding-top:30px; }
+}
+
+@media (max-width:768px){
+  body{ font-size:15px; }
+  .mobile-bar{ display:grid; }
+  .footer__bottom{ padding-bottom:calc(96px + env(safe-area-inset-bottom, 0)); }
+  .to-top{ bottom:78px; }
+  .toast{ bottom:96px; }
+  .hero__content{ max-width:100%; }
+  .hero__ctas .btn{ flex:1 1 auto; min-width:min(100%, 220px); }
+  .sec-head{ flex-direction:column; align-items:flex-start; }
+
+  /* Signature dishes — elegant swipe rail */
+  .dishes{
+    display:flex;
+    gap:14px;
+    overflow-x:auto;
+    scroll-snap-type:x mandatory;
+    padding-bottom:14px;
+    margin-inline:calc(var(--gutter) * -1);
+    padding-inline:var(--gutter);
+    scrollbar-width:none;
+  }
+  .dishes::-webkit-scrollbar{ display:none; }
+  .dish{ flex:0 0 78%; scroll-snap-align:center; aspect-ratio:3/4.1; }
+  .dish__desc{ max-height:80px; opacity:1; }
+
+  .footer__top{ grid-template-columns:1fr 1fr; gap:36px 24px; }
+  .footer__brand{ grid-column:1 / -1; }
+  .footer__col--cta{ grid-column:1 / -1; }
+
+  .form__row{ grid-template-columns:1fr; gap:0; }
+  .form{ padding:26px 20px; }
+  .lightbox__fig img{ max-height:60vh; }
+  .lb-prev{ left:6px; } .lb-next{ right:6px; }
+  .lb-btn{ width:44px; height:44px; }
+  .lb-prev,.lb-next{ top:auto; bottom:22px; transform:none; }
+  .lb-prev{ left:calc(50% - 56px); } .lb-next{ left:calc(50% + 12px); right:auto; }
+  .lightbox__cap{ flex-direction:column; gap:6px; padding-bottom:70px; text-align:center; }
+}
+
+@media (max-width:480px){
+  .dishes .dish{ flex:0 0 84%; }
+  .exp-grid{ grid-template-columns:1fr; }
+  .footer__wordmark{ -webkit-text-stroke-width:.6px; }
+  .intro__stats{ gap:26px 34px; }
+  .gitem__cap{ padding:14px; }
+}
+
+/* Prevent horizontal overflow on small devices */
+@media (max-width:400px){
+  :root{ --gutter:18px; }
+  .btn{ padding:15px 22px; font-size:10px; letter-spacing:.18em; }
+}
+
+/* ============================================================
+   24. REDUCED MOTION
+   ============================================================ */
+@media (prefers-reduced-motion:reduce){
+  html{ scroll-behavior:auto; }
+  *,*::before,*::after{
+    animation-duration:.001ms !important;
+    animation-iteration-count:1 !important;
+    transition-duration:.001ms !important;
+    scroll-behavior:auto !important;
+  }
+  .hero__media img{ animation:none; transform:scale(1.02); }
+  .hero h1 .line > span{ transform:none; }
+  .hero__eyebrow,.hero__sub,.hero__ctas,.hero__meta,.hero__scroll{ opacity:1; }
+  .grain{ display:none; }
+  [data-reveal]{ opacity:1 !important; transform:none !important; clip-path:none !important; }
+  .mitem{ opacity:1; transform:none; }
+  .stars svg{ opacity:1; transform:none; }
+  .cursor,.cursor-dot{ display:none !important; }
+}
+</style>
+</head>
+
+<body>
+
+<!-- ============================================================
+     LOADER
+     ============================================================ -->
+<div id="loader" role="status" aria-live="polite" aria-label="Loading Koshe Kosha Durgapur">
+  <div class="loader-mark">K<span>K</span></div>
+  <div class="loader-word">Koshe Kosha · Durgapur</div>
+  <div class="loader-bar"><i></i></div>
+</div>
+
+<!-- Film grain -->
+<div class="grain" aria-hidden="true"></div>
+
+<!-- Custom cursor -->
+<div class="cursor" aria-hidden="true"></div>
+<div class="cursor-dot" aria-hidden="true"></div>
+
+<!-- ============================================================
+     NAVIGATION
+     ============================================================ -->
+<header class="nav" id="nav">
+  <div class="container nav__inner">
+    <a href="#home" class="nav__brand" aria-label="Koshe Kosha Durgapur — home">
+      <span class="brand-mark" aria-hidden="true">KK</span>
+      <span class="brand-text">
+        <b>KOSHE KOSHA</b>
+        <small>Durgapur</small>
+      </span>
+    </a>
+
+    <nav class="nav__links" aria-label="Primary">
+      <a class="nav__link" href="#home">Home</a>
+      <a class="nav__link" href="#story">Our Story</a>
+      <a class="nav__link" href="#menu">Menu</a>
+      <a class="nav__link" href="#experience">Experience</a>
+      <a class="nav__link" href="#gallery">Gallery</a>
+      <a class="nav__link" href="#reviews">Reviews</a>
+      <a class="nav__link" href="#contact">Contact</a>
+    </nav>
+
+    <a href="#reserve" class="nav__cta"><span>Reserve Table</span></a>
+
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="drawer">
+      <i aria-hidden="true"></i>
+    </button>
+  </div>
+</header>
+
+<!-- Mobile drawer -->
+<div class="drawer" id="drawer" role="dialog" aria-modal="true" aria-label="Mobile navigation">
+  <nav class="drawer__links" aria-label="Mobile">
+    <a class="drawer__link" href="#home"><em>01</em>Home</a>
+    <a class="drawer__link" href="#story"><em>02</em>Our Story</a>
+    <a class="drawer__link" href="#menu"><em>03</em>Menu</a>
+    <a class="drawer__link" href="#experience"><em>04</em>Experience</a>
+    <a class="drawer__link" href="#gallery"><em>05</em>Gallery</a>
+    <a class="drawer__link" href="#reviews"><em>06</em>Reviews</a>
+    <a class="drawer__link" href="#reserve"><em>07</em>Reserve</a>
+    <a class="drawer__link" href="#contact"><em>08</em>Contact</a>
+  </nav>
+  <div class="drawer__foot">
+    <a href="tel:07595077711">075950 77711</a>
+    <span>City Centre, Durgapur</span>
+  </div>
+</div>
+
+<main>
+
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<section class="hero" id="home">
+  <div class="hero__media" id="heroMedia" aria-hidden="true">
+    <img
+      src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=2000&q=80"
+      alt=""
+      fetchpriority="high" />
+  </div>
+  <div class="hero__scrim" aria-hidden="true"></div>
+  <div class="hero__vignette" aria-hidden="true"></div>
+
+  <div class="container hero__inner">
+    <div class="hero__content">
+      <p class="eyebrow hero__eyebrow">Authentic Bengali Cuisine</p>
+
+      <h1>
+        <span class="line"><span>The Soul of Bengal,</span></span>
+        <span class="line"><span>Served <em class="italic-accent" style="font-style:italic">Beautifully.</em></span></span>
+      </h1>
+
+      <p class="hero__sub">
+        An unforgettable Bengali dining experience in the heart of Durgapur —
+        where heritage recipes meet contemporary hospitality.
+      </p>
+
+      <div class="hero__ctas">
+        <a href="#menu" class="btn btn--gold">
+          <span>Explore Menu</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a href="#reserve" class="btn btn--ghost"><span>Reserve a Table</span></a>
+        <button type="button" class="btn btn--line" data-order>
+          <span>Order Now</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </button>
+      </div>
+
+      <div class="hero__meta">
+        <span><i aria-hidden="true"></i>City Centre, Durgapur</span>
+        <span><i aria-hidden="true"></i>4.4 ★ · 734+ Google Reviews</span>
+        <span><i aria-hidden="true"></i>₹400 – ₹1,600</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero__scroll" aria-hidden="true">
+    <span>Scroll</span>
+    <i></i>
+  </div>
+</section>
+
+<!-- ============================================================
+     INTRO / EDITORIAL
+     ============================================================ -->
+<section class="section intro" id="intro">
+  <svg class="motif motif--intro" viewBox="0 0 200 200" fill="none" aria-hidden="true">
+    <circle cx="100" cy="100" r="78" stroke="currentColor" stroke-width=".7"/>
+    <circle cx="100" cy="100" r="56" stroke="currentColor" stroke-width=".7"/>
+    <path d="M100 22v156M22 100h156M45 45l110 110M155 45L45 155" stroke="currentColor" stroke-width=".5"/>
+  </svg>
+
+  <div class="container">
+    <div class="intro__grid">
+      <div>
+        <p class="eyebrow" data-reveal>The Koshe Kosha Experience</p>
+        <h2 data-reveal data-delay="1">
+          Where Bengal's culinary heritage meets <em>contemporary hospitality.</em>
+        </h2>
+
+        <p class="lede" data-reveal data-delay="2">
+          For over a decade, Koshe Kosha has worked to bring back the authenticity of
+          Bengal's culinary heritage — presenting it in a way that feels warm, current
+          and deeply familiar. Every slow-cooked kosha, every hand-ground spice and every
+          plate that leaves our kitchen carries a story from Bengal's kitchens.
+        </p>
+        <p class="lede" data-reveal data-delay="2" style="margin-top:20px">
+          Born from a vision to take the flavours that form the unique identity of Bengali
+          cuisine to a wider audience, Koshe Kosha offers a distinctly
+          <em style="font-style:italic;color:var(--gold-dk)">Bangaliana</em> experience —
+          rooted in tradition, served with quiet elegance.
+        </p>
+
+        <div class="intro__stats" data-reveal data-delay="3">
+          <div class="stat"><b>10+</b><span>Years of Heritage</span></div>
+          <div class="stat"><b>4.4★</b><span>Google Rating</span></div>
+          <div class="stat"><b>734+</b><span>Guest Reviews</span></div>
+        </div>
+      </div>
+
+      <div class="intro__media" data-reveal="clip" data-delay="1">
+        <figure>
+          <img
+            src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=1200&q=80"
+            alt="A slow-cooked Bengali curry served in a traditional bowl"
+            loading="lazy" />
+        </figure>
+        <div class="intro__badge">
+          <b>Est. Bengal</b>
+          <span>Authentic since day one</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SIGNATURE DISHES
+     ============================================================ -->
+<section class="section signatures" id="signatures">
+  <div class="container">
+    <div class="sec-head">
+      <div>
+        <p class="eyebrow" data-reveal>Chef's Selection</p>
+        <h2 data-reveal data-delay="1">Signatures of Bengal</h2>
+      </div>
+      <p class="lede" style="max-width:34ch;margin-bottom:6px" data-reveal data-delay="2">
+        The dishes our guests travel across the city for — cooked slow, spiced right,
+        served with care.
+      </p>
+    </div>
+
+    <div class="dishes" data-reveal>
+
+      <a class="dish" href="#menu" aria-label="Kosha Mangsho — signature dish">
+        <img src="https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?auto=format&fit=crop&w=1000&q=80"
+             alt="Kosha Mangsho — slow-cooked Bengali mutton curry" loading="lazy" />
+        <div class="dish__body">
+          <span class="dish__tag">Signature</span>
+          <h3 class="dish__name">Kosha Mangsho</h3>
+          <p class="dish__desc">Mutton slow-cooked in a rich, dark, spice-laden gravy — the dish our name was built on.</p>
+          <span class="dish__line" aria-hidden="true"></span>
+        </div>
+      </a>
+
+      <a class="dish" href="#menu" aria-label="Malai Chingri Biryani — signature dish">
+        <img src="https://images.unsplash.com/photo-1596797038530-2c107229654b?auto=format&fit=crop&w=1000&q=80"
+             alt="Malai Chingri Biryani — prawn biryani with creamy malai" loading="lazy" />
+        <div class="dish__body">
+          <span class="dish__tag">Signature</span>
+          <h3 class="dish__name">Malai Chingri Biryani</h3>
+          <p class="dish__desc">Fragrant long-grain rice layered with prawns and a delicate, creamy malai finish.</p>
+          <span class="dish__line" aria-hidden="true"></span>
+        </div>
+      </a>
+
+      <a class="dish" href="#menu" aria-label="Bhetki Paturi — signature dish">
+        <img src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=1000&q=80"
+             alt="Bhetki Paturi — barramundi steamed in banana leaf" loading="lazy" />
+        <div class="dish__body">
+          <span class="dish__tag">Signature</span>
+          <h3 class="dish__name">Bhetki Paturi</h3>
+          <p class="dish__desc">Barramundi marinated in mustard and spices, wrapped and steamed in banana leaf.</p>
+          <span class="dish__line" aria-hidden="true"></span>
+        </div>
+      </a>
+
+      <a class="dish" href="#menu" aria-label="Bhetki Fry — signature dish">
+        <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=1000&q=80"
+             alt="Bhetki Fry — crumbed Bengali fish fry" loading="lazy" />
+        <div class="dish__body">
+          <span class="dish__tag">Signature</span>
+          <h3 class="dish__name">Bhetki Fry</h3>
+          <p class="dish__desc">Golden crumbed barramundi fillets — crisp outside, delicate within.</p>
+          <span class="dish__line" aria-hidden="true"></span>
+        </div>
+      </a>
+
+      <a class="dish" href="#menu" aria-label="Hurohuri Alum Dum Roti Combo — signature dish">
+        <img src="https://images.unsplash.com/photo-1567337710282-00832b415979?auto=format&fit=crop&w=1000&q=80"
+             alt="Hurohuri Alum Dum Roti Combo — Bengali potato curry with roti" loading="lazy" />
+        <div class="dish__body">
+          <span class="dish__tag">Comfort Classic</span>
+          <h3 class="dish__name">Hurohuri Alum Dum Roti Combo</h3>
+          <p class="dish__desc">The Bengali comfort plate — tempered potato curry with soft roti.</p>
+          <span class="dish__line" aria-hidden="true"></span>
+        </div>
+      </a>
+
+      <a class="dish" href="#menu" aria-label="Chitol Muirtha — signature dish">
+        <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?auto=format&fit=crop&w=1000&q=80"
+             alt="Chitol Muirtha — Bengali fish kofta curry" loading="lazy" />
+        <div class="dish__body">
+          <span class="dish__tag">Rare Find</span>
+          <h3 class="dish__name">Chitol Muirtha</h3>
+          <p class="dish__desc">Featherback fish worked into delicate koftas, simmered in a spiced gravy.</p>
+          <span class="dish__line" aria-hidden="true"></span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     MENU
+     ============================================================ -->
+<section class="section menu" id="menu">
+  <div class="container">
+    <div class="sec-head">
+      <div>
+        <p class="eyebrow" data-reveal>The Menu</p>
+        <h2 data-reveal data-delay="1">A Taste of Bengal</h2>
+      </div>
+      <p class="lede" style="max-width:34ch;margin-bottom:6px" data-reveal data-delay="2">
+        A selection from our kitchen. Prices shown are for items verified from our
+        current listing.
+      </p>
+    </div>
+
+    <!-- Category tabs -->
+    <div class="menu__tabs" role="tablist" aria-label="Menu categories" id="menuTabs">
+      <button class="tab is-active" role="tab" aria-selected="true" data-cat="highlights">Highlights</button>
+      <button class="tab" role="tab" aria-selected="false" data-cat="chutney">Chutney</button>
+      <button class="tab" role="tab" aria-selected="false" data-cat="starters">Starters</button>
+      <button class="tab" role="tab" aria-selected="false" data-cat="mains">Main Course</button>
+      <button class="tab" role="tab" aria-selected="false" data-cat="dal">Dal</button>
+      <button class="tab" role="tab" aria-selected="false" data-cat="rice">Rice / Biryani</button>
+      <button class="tab" role="tab" aria-selected="false" data-cat="desserts">Desserts</button>
+      <button class="tab" role="tab" aria-selected="false" data-cat="beverages">Beverages</button>
+    </div>
+
+    <!-- Panel -->
+    <div class="menu__panel" id="menuPanel" role="tabpanel" aria-live="polite"></div>
+
+    <div class="menu__note">
+      <span>Prices inclusive of applicable taxes as listed. Menu subject to seasonal change.</span>
+      <button type="button" class="btn--line" data-order style="font-size:11px;letter-spacing:.2em;text-transform:uppercase;">
+        Order Online
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     EXPERIENCE
+     ============================================================ -->
+<section class="section experience" id="experience">
+  <div class="container">
+    <div class="sec-head">
+      <div>
+        <p class="eyebrow" data-reveal>The Experience</p>
+        <h2 data-reveal data-delay="1" style="color:var(--ink)">Dine the Bengali Way</h2>
+      </div>
+      <p class="lede" style="max-width:36ch;margin-bottom:6px" data-reveal data-delay="2">
+        Perfect for lunch, dinner and relaxed Bengali dining — with warm hospitality
+        at every table.
+      </p>
+    </div>
+
+    <div class="exp-grid" data-reveal>
+
+      <div class="exp-item">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3v8a3 3 0 0 0 3 3v7M7 3v5M10 3v5M17 3c-1.5 2-2 3.5-2 6 0 2 .8 3 2 3v9"/></svg>
+        <h3>Dine-In</h3>
+        <p>A warm, softly lit dining room built for long, unhurried meals.</p>
+      </div>
+
+      <div class="exp-item">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1 12H6L5 8zM9 8V6a3 3 0 0 1 6 0v2"/></svg>
+        <h3>Takeaway</h3>
+        <p>Your favourites packed to travel, without losing the flavour.</p>
+      </div>
+
+      <div class="exp-item">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 16V7h11v9M14 10h4l3 3v3h-7M7 19a2 2 0 1 0 0-4 2 2 0 0 0 0 4zM18 19a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/></svg>
+        <h3>Delivery</h3>
+        <p>Bengali comfort delivered across Durgapur through our partners.</p>
+      </div>
+
+      <div class="exp-item">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 18h16M6 18v-4a6 6 0 0 1 12 0v4M12 8V5"/><circle cx="12" cy="4" r="1.2"/></svg>
+        <h3>Table Service</h3>
+        <p>Attentive, unhurried service that lets the evening unfold naturally.</p>
+      </div>
+
+      <div class="exp-item">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.4"/><path d="M3 20c0-3.3 2.7-5 6-5s6 1.7 6 5M16 20c0-2.3 1.6-3.8 4-4"/></svg>
+        <h3>Family Dining</h3>
+        <p>Generous portions and a menu that works for every generation.</p>
+      </div>
+
+      <div class="exp-item">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="8" r="2.6"/><circle cx="16" cy="8" r="2.6"/><path d="M2.5 19c0-3 2.5-4.6 5.5-4.6S13.5 16 13.5 19M10.5 19c0-3 2.5-4.6 5.5-4.6s5.5 1.6 5.5 4.6"/></svg>
+        <h3>Group Dining</h3>
+        <p>Celebrations, office lunches and family gatherings, comfortably seated.</p>
+      </div>
+
+      <div class="exp-item">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="1"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+        <h3>Reservations</h3>
+        <p>Plan ahead and let us keep your table ready on arrival.</p>
+      </div>
+
+      <div class="exp-item">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21c0-6 3-10 8-11-1 6-3 9-8 11zM12 21c0-6-3-10-8-11 1 6 3 9 8 11zM12 21v-6"/></svg>
+        <h3>Vegetarian Options</h3>
+        <p>A thoughtful selection of vegetarian Bengali dishes, cooked separately.</p>
+      </div>
+
+    </div>
+
+    <div class="exp-foot">
+      <p data-reveal>"Perfect for lunch, dinner and relaxed Bengali dining."</p>
+      <div class="tags" data-reveal data-delay="1">
+        <span class="tag">Cozy</span>
+        <span class="tag">Quiet</span>
+        <span class="tag">Trendy</span>
+        <span class="tag">Upscale</span>
+        <span class="tag">Family Friendly</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     GALLERY
+     ============================================================ -->
+<section class="section gallery" id="gallery">
+  <div class="container">
+    <div class="sec-head">
+      <div>
+        <p class="eyebrow" data-reveal>Inside Koshe Kosha</p>
+        <h2 data-reveal data-delay="1">The Gallery</h2>
+      </div>
+      <p class="lede" style="max-width:32ch;margin-bottom:6px" data-reveal data-delay="2">
+        Warm lighting, quiet corners and plates worth photographing.
+      </p>
+    </div>
+
+    <div class="masonry" id="masonry" data-reveal>
+      <!-- Items generated by JS for easy image replacement -->
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     OUR STORY
+     ============================================================ -->
+<section class="section story" id="story">
+  <div class="container">
+    <div class="story__grid">
+
+      <div class="story__media" data-reveal="clip">
+        <figure>
+          <img
+            src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=1200&q=80"
+            alt="Warmly lit interior of Koshe Kosha Durgapur dining room"
+            loading="lazy" />
+        </figure>
+      </div>
+
+      <div>
+        <p class="eyebrow" data-reveal>Our Story</p>
+        <h2 class="display--sm" data-reveal data-delay="1" style="margin-top:20px;color:var(--ivory)">
+          Rooted in Bengal.
+        </h2>
+
+        <p class="lede" data-reveal data-delay="2" style="margin-top:24px">
+          For over a decade, Koshe Kosha has worked to preserve the flavours, traditions
+          and character of Bengal while presenting them in a contemporary dining
+          environment. What began as a commitment to authenticity became a place where
+          families gather, stories are shared and recipes are honoured.
+        </p>
+        <p class="lede" data-reveal data-delay="2" style="margin-top:18px">
+          From the slow, patient kosha technique to the mustard-oil finish on our fish,
+          nothing here is rushed. Because the food of Bengal was never meant to be.
+        </p>
+
+        <div class="timeline" data-reveal data-delay="3">
+          <div class="tl">
+            <b>Heritage</b>
+            <span>Recipes drawn from Bengal's regional kitchens and family tables.</span>
+          </div>
+          <div class="tl">
+            <b>Craft</b>
+            <span>Hand-ground spices, slow cooking and techniques that take time.</span>
+          </div>
+          <div class="tl">
+            <b>Hospitality</b>
+            <span>The warmth of a Bengali home, brought into a contemporary dining room.</span>
+          </div>
+          <div class="tl">
+            <b>Experience</b>
+            <span>A meal that feels familiar, and still feels like an occasion.</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     REVIEWS
+     ============================================================ -->
+<section class="section reviews" id="reviews">
+  <div class="container">
+    <p class="eyebrow" data-reveal>Guest Voices</p>
+    <h2 class="display--sm" data-reveal data-delay="1" style="margin-top:20px">What Our Guests Say</h2>
+
+    <div class="reviews__grid">
+
+      <div class="rating-block" data-reveal data-delay="1">
+        <div class="rating-num">4.4<sup>★</sup></div>
+        <div class="stars" role="img" aria-label="Rated 4.4 out of 5">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3 6.6 7 .8-5.2 4.8 1.4 7L12 17.8 5.8 21.2l1.4-7L2 9.4l7-.8z"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3 6.6 7 .8-5.2 4.8 1.4 7L12 17.8 5.8 21.2l1.4-7L2 9.4l7-.8z"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3 6.6 7 .8-5.2 4.8 1.4 7L12 17.8 5.8 21.2l1.4-7L2 9.4l7-.8z"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3 6.6 7 .8-5.2 4.8 1.4 7L12 17.8 5.8 21.2l1.4-7L2 9.4l7-.8z"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3 6.6 7 .8-5.2 4.8 1.4 7L12 17.8 5.8 21.2l1.4-7L2 9.4l7-.8z"/></svg>
+        </div>
+        <p class="rating-count">734+ Google Reviews</p>
+      </div>
+
+      <figure class="review-quote" data-reveal data-delay="2">
+        <blockquote>
+          "Overall, I had a good dining experience at this restaurant. The ambience was
+          pleasant, and the service was satisfactory. Most of the dishes were
+          well-prepared and flavorful."
+        </blockquote>
+        <figcaption>
+          <i aria-hidden="true"></i>
+          Verified Google Review · Koshe Kosha Durgapur
+        </figcaption>
+      </figure>
+
+    </div>
+
+    <div style="margin-top:clamp(38px,4.5vw,56px)" data-reveal>
+      <a class="btn--line"
+         href="https://www.google.com/maps/search/?api=1&query=Koshe+Kosha+Durgapur+G7QX%2B7Q"
+         target="_blank" rel="noopener noreferrer">
+        View all reviews on Google
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     RESERVATION
+     ============================================================ -->
+<section class="section reserve" id="reserve">
+  <div class="reserve__bg" aria-hidden="true">
+    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1800&q=80"
+         alt="" loading="lazy" />
+  </div>
+
+  <div class="container">
+    <div class="reserve__grid">
+
+      <div class="reserve__aside">
+        <p class="eyebrow" data-reveal>Reservations</p>
+        <h2 data-reveal data-delay="1">Your Table Awaits.</h2>
+        <p data-reveal data-delay="2">
+          Join us for an evening of Bengali flavours, warm hospitality and
+          memorable dining.
+        </p>
+        <div class="reserve__contact" data-reveal data-delay="3">
+          <span>Prefer to call? <a href="tel:07595077711">075950 77711</a></span>
+          <span>City Centre, Durgapur · Open for lunch &amp; dinner</span>
+        </div>
+      </div>
+
+      <div data-reveal="right" data-delay="1">
+        <form class="form" id="reserveForm" novalidate>
+          <div class="form__row">
+            <div class="field">
+              <label for="r-name">Full Name</label>
+              <input id="r-name" name="name" type="text" placeholder="Your name" autocomplete="name" required />
+              <span class="field__err">Please enter your name.</span>
+            </div>
+            <div class="field">
+              <label for="r-phone">Phone Number</label>
+              <input id="r-phone" name="phone" type="tel" placeholder="10-digit mobile number" autocomplete="tel" required />
+              <span class="field__err">Please enter a valid 10-digit phone number.</span>
+            </div>
+          </div>
+
+          <div class="form__row">
+            <div class="field">
+              <label for="r-guests">Guests</label>
+              <select id="r-guests" name="guests" required>
+                <option value="">Select</option>
+                <option>1 Guest</option>
+                <option>2 Guests</option>
+                <option>3 Guests</option>
+                <option>4 Guests</option>
+                <option>5 Guests</option>
+                <option>6 Guests</option>
+                <option>7+ Guests</option>
+              </select>
+              <span class="field__err">Please select number of guests.</span>
+            </div>
+            <div class="field">
+              <label for="r-date">Date</label>
+              <input id="r-date" name="date" type="date" required />
+              <span class="field__err">Please choose a date.</span>
+            </div>
+          </div>
+
+          <div class="form__row">
+            <div class="field">
+              <label for="r-time">Time</label>
+              <input id="r-time" name="time" type="time" required />
+              <span class="field__err">Please choose a time.</span>
+            </div>
+            <div class="field">
+              <label for="r-occasion">Occasion <span style="opacity:.5">(optional)</span></label>
+              <input id="r-occasion" name="occasion" type="text" placeholder="Birthday, family dinner…" />
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn--gold form__submit">
+            <span>Request a Reservation</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </button>
+
+          <p class="form__hint">
+            This is a demo form. No live reservation system is connected yet.
+          </p>
+        </form>
+
+        <!-- Success state -->
+        <div class="form form-success" id="reserveSuccess" hidden>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M8 12.5l2.6 2.6L16 9.5"/></svg>
+          <h3>Thank you.</h3>
+          <p>
+            This demo reservation request has been captured. In the final website, this
+            would be delivered directly to the restaurant's reservation desk and
+            confirmed by call or WhatsApp.
+          </p>
+          <button type="button" class="btn btn--ghost" id="reserveReset"><span>Make another request</span></button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     LOCATION
+     ============================================================ -->
+<section class="section location" id="contact">
+  <div class="container">
+    <div class="sec-head">
+      <div>
+        <p class="eyebrow" data-reveal>Find Us</p>
+        <h2 data-reveal data-delay="1" style="color:var(--ink)">Visit Koshe Kosha</h2>
+      </div>
+      <p class="lede" style="max-width:32ch;margin-bottom:6px" data-reveal data-delay="2">
+        In the heart of City Centre, Durgapur — easy to reach, easy to park.
+      </p>
+    </div>
+
+    <div class="loc__grid">
+
+      <div class="loc__info" data-reveal>
+        <h3>1/7, Plot No. C-3, Satyajit Roy Sarani, City Centre, Durgapur.</h3>
+
+        <address class="loc__addr">
+          <b>Koshe Kosha Durgapur</b><br />
+          1/7, Plot No. C-3, Satyajit Roy Sarani,<br />
+          near DCB Bank, Doctor's Colony,<br />
+          City Center, Durgapur,<br />
+          West Bengal – 713216<br />
+          <span style="opacity:.6;font-size:13px">Plus Code: G7QX+7Q Durgapur</span>
+        </address>
+
+        <div class="loc__rows">
+          <div class="loc__row">
+            <span>Phone</span>
+            <a href="tel:07595077711">075950 77711</a>
+          </div>
+          <div class="loc__row">
+            <span>Alternate</span>
+            <a href="tel:9830949494">9830 94 94 94</a>
+          </div>
+          <div class="loc__row">
+            <span>Hours</span>
+            <strong>Lunch &amp; Dinner · Daily</strong>
+          </div>
+          <div class="loc__row">
+            <span>Price Range</span>
+            <strong>₹400 – ₹1,600</strong>
+          </div>
+        </div>
+
+        <div class="loc__actions">
+          <a class="btn btn--gold"
+             href="https://www.google.com/maps/search/?api=1&query=Koshe+Kosha+Durgapur+G7QX%2B7Q"
+             target="_blank" rel="noopener noreferrer">
+            <span>Get Directions</span>
+          </a>
+          <a class="btn btn--ghost-dark" href="tel:07595077711"><span>Call Restaurant</span></a>
+          <a class="btn btn--ghost-dark"
+             href="https://wa.me/917595077711?text=Hello%20Koshe%20Kosha%20Durgapur%2C%20I%27d%20like%20to%20enquire%20about%20a%20table."
+             target="_blank" rel="noopener noreferrer">
+            <span>WhatsApp</span>
+          </a>
+        </div>
+      </div>
+
+      <a class="map"
+         href="https://www.google.com/maps/search/?api=1&query=Koshe+Kosha+Durgapur+G7QX%2B7Q"
+         target="_blank" rel="noopener noreferrer"
+         aria-label="Open Koshe Kosha Durgapur location in Google Maps"
+         data-reveal="right" data-delay="1">
+        <div class="map__pin">
+          <i aria-hidden="true"></i>
+          <b>Koshe Kosha Durgapur</b>
+          <span>City Centre · Durgapur</span>
+        </div>
+        <span class="map__hint">Tap to open in Google Maps</span>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+
+      <div class="footer__brand">
+        <a href="#home" class="nav__brand" aria-label="Koshe Kosha Durgapur — back to top">
+          <span class="brand-mark" aria-hidden="true">KK</span>
+          <span class="brand-text">
+            <b>KOSHE KOSHA</b>
+            <small>Durgapur</small>
+          </span>
+        </a>
+        <p>Authentic Bengali cuisine, beautifully served. A Bangaliana experience in the heart of City Centre, Durgapur.</p>
+
+        <div class="footer__social">
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".9" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8.8c0-.5.3-.8.8-.8z"/></svg>
+          </a>
+          <a href="https://wa.me/917595077711" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12a8 8 0 1 1-3.2-6.4M20 4v4h-4"/><path d="M4 20l1.6-4.2A8 8 0 0 0 12 20h1"/></svg>
+          </a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Koshe+Kosha+Durgapur" target="_blank" rel="noopener noreferrer" aria-label="Google Maps">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer__col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#story">Our Story</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:07595077711">075950 77711</a></li>
+          <li><a href="tel:9830949494">9830 94 94 94</a></li>
+          <li><a href="https://wa.me/917595077711" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+          <li><a href="https://www.google.com/maps/search/?api=1&query=Koshe+Kosha+Durgapur" target="_blank" rel="noopener noreferrer">Google Maps</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col footer__col--cta">
+        <h4>Visit Us</h4>
+        <address>
+          1/7, Plot No. C-3, Satyajit Roy Sarani,<br />
+          near DCB Bank, Doctor's Colony,<br />
+          City Center, Durgapur,<br />
+          West Bengal – 713216
+        </address>
+        <a href="#reserve" class="btn btn--gold footer__cta"><span>Reserve a Table</span></a>
+      </div>
+
+    </div>
+
+    <div class="footer__wordmark" aria-hidden="true">KOSHE KOSHA</div>
+
+    <div class="footer__bottom">
+      <span>© <span id="year">2025</span> Koshe Kosha Durgapur. All rights reserved.</span>
+      <span class="demo-badge"><i aria-hidden="true"></i>Website concept demo — created for presentation purposes.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============================================================
+     FLOATING UI
+     ============================================================ -->
+<button class="to-top" id="toTop" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+</button>
+
+<nav class="mobile-bar" id="mobileBar" aria-label="Quick actions">
+  <a href="tel:07595077711">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h3l2 5-2.5 1.5a12 12 0 0 0 6 6L15 14l5 2v3a2 2 0 0 1-2.2 2A16 16 0 0 1 3 6.2 2 2 0 0 1 5 4z"/></svg>
+    Call
+  </a>
+  <a href="#" data-order>
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16l-1.5 10h-13zM9 6a3 3 0 0 1 6 0"/></svg>
+    Order
+  </a>
+  <a href="#reserve" class="is-accent">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="1"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+    Reserve
+  </a>
+</nav>
+
+<!-- Toast -->
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<!-- ============================================================
+     LIGHTBOX
+     ============================================================ -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+  <button class="lb-btn lb-close" id="lbClose" aria-label="Close viewer">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+  </button>
+  <button class="lb-btn lb-prev" id="lbPrev" aria-label="Previous image">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+  </button>
+  <button class="lb-btn lb-next" id="lbNext" aria-label="Next image">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+  </button>
+
+  <figure class="lightbox__fig">
+    <img id="lbImg" src="" alt="" />
+    <figcaption class="lightbox__cap">
+      <b id="lbTitle">—</b>
+      <span id="lbMeta">—</span>
+    </figcaption>
+  </figure>
+</div>
+
+<!-- ============================================================
+     JAVASCRIPT
+     ============================================================ -->
+<script>
+(function () {
+  "use strict";
+
+  /* ----------------------------------------------------------
+     CONFIG — swap image URLs here in one place
+     ---------------------------------------------------------- */
+  var GALLERY = [
+    { src:"https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1400&q=80", title:"The Dining Room",  meta:"Interior",   cls:"g-a" },
+    { src:"https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1200&q=80", title:"Evening Ambience", meta:"Atmosphere", cls:"g-b" },
+    { src:"https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=1200&q=80", title:"Kosha Mangsho",    meta:"Signature",  cls:"g-c" },
+    { src:"https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=1400&q=80", title:"Warm Corners",     meta:"Interior",   cls:"g-d" },
+    { src:"https://images.unsplash.com/photo-1596797038530-2c107229654b?auto=format&fit=crop&w=1200&q=80", title:"Biryani Craft",   meta:"Kitchen",    cls:"g-b" },
+    { src:"https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=1200&q=80", title:"Plated with Care", meta:"Food",       cls:"g-b" },
+    { src:"https://images.unsplash.com/photo-1567337710282-00832b415979?auto=format&fit=crop&w=1200&q=80", title:"Bengali Thali",   meta:"Food",       cls:"g-d" },
+    { src:"https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80", title:"Table Scenes",    meta:"Moments",    cls:"g-b" }
+  ];
+
+  /* Menu — only verified items carry prices.
+     Items without verified pricing show a soft label instead. */
+  var MENU = {
+    highlights: [
+      { name:"Kosha Mangsho", desc:"Slow-cooked mutton in a rich, dark Bengali gravy", price:null, tag:"Signature" },
+      { name:"Malai Chingri Biryani", desc:"Fragrant rice layered with prawns and creamy malai", price:null, tag:"Signature" },
+      { name:"Bhetki Paturi", desc:"Barramundi in mustard, steamed in banana leaf", price:null, tag:"Signature" },
+      { name:"Bhetki Fry", desc:"Golden crumbed barramundi fillets", price:null, tag:"Signature" },
+      { name:"Hurohuri Alum Dum Roti Combo", desc:"Tempered potato curry served with roti", price:null, tag:"Combo" },
+      { name:"Chitol Muirtha", desc:"Featherback fish koftas in a spiced gravy", price:null, tag:"Regional" }
+    ],
+    chutney: [
+      { name:"Anarash Chutney & Papad", desc:"Fragrant sweet & sour pineapple relish", price:"₹285" },
+      { name:"Aamsotto Khejur-er Chutney & Papad", desc:"Mango fruit leather, date palm and tomato relish served with a papad", price:"₹285" },
+      { name:"Aamer Chutney & Papad", desc:"Sweet & sour, syrup-ey mango relish", price:"₹285" },
+      { name:"Alu Bukhara (Plum) Chutney & Papad", desc:"Sweet & tangy plum relish", price:"₹245" }
+    ],
+    starters: [
+      { name:"Murgir (Chicken) Cutlet", desc:"Crumbed chicken cutlets", price:"₹435" },
+      { name:"Aam Chhanar Cutlet", desc:"Spicy & sour paneer cutlets", price:"₹295" },
+      { name:"Chhana Koraishutir Chop", desc:"Cottage cheese and green peas croquette", price:"₹305" },
+      { name:"Postor Bora", desc:"Bengali styled poppy seed croquette", price:"₹455" },
+      { name:"Chingrir Cutlet", desc:"Crumbed prawn cutlets", price:"₹485" },
+      { name:"Fish (Bhetki) Kabiraji", desc:"British influenced fish coverage cutlets", price:"₹485" },
+      { name:"Murshidabadi Murgi", desc:"Red hot spicy and crunchy fried chicken from Murshidabad", price:"₹545" }
+    ],
+    mains:        { empty:true, title:"Main Course", note:"Our main course selection — including Kosha Mangsho, Chitol Muirtha and other Bengali classics — is available in the full restaurant menu." },
+    dal:          { empty:true, title:"Dal",          note:"A rotating selection of Bengali dal preparations. Please ask our team for today's offerings." },
+    rice:         { empty:true, title:"Rice / Biryani", note:"Including our Malai Chingri Biryani and other rice specialities. Full selection available on request." },
+    desserts:     { empty:true, title:"Desserts",     note:"Traditional Bengali sweets and desserts. Please ask our team for today's selection." },
+    beverages:    { empty:true, title:"Beverages",    note:"A range of beverages to accompany your meal. Full list available in the restaurant." }
+  };
+
+  var PHONE = "07595077711";
+  var WHATSAPP = "https://wa.me/917595077711";
+  var MAPS = "https://www.google.com/maps/search/?api=1&query=Koshe+Kosha+Durgapur+G7QX%2B7Q";
+
+  var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var $  = function (s, c) { return (c || document).querySelector(s); };
+  var $$ = function (s, c) { return Array.prototype.slice.call((c || document).querySelectorAll(s)); };
+
+  /* ==========================================================
+     1. LOADER
+     ========================================================== */
+  (function loader() {
+    var el = $("#loader");
+    if (!el) return;
+    var minTime = reduceMotion ? 120 : 1500;
+    var start = Date.now();
+
+    function finish() {
+      var wait = Math.max(0, minTime - (Date.now() - start));
+      setTimeout(function () {
+        el.classList.add("is-done");
+        document.body.style.overflow = "";
+        setTimeout(function () { el.remove(); }, 900);
+      }, wait);
+    }
+
+    document.body.style.overflow = "hidden";
+
+    if (document.readyState === "complete") finish();
+    else window.addEventListener("load", finish);
+
+    // Hard safety net
+    setTimeout(finish, 3800);
+  })();
+
+  /* ==========================================================
+     2. IMAGE FALLBACKS
+     ========================================================== */
+  function bindFallbacks(root) {
+    $$("img", root || document).forEach(function (img) {
+      if (img.dataset.fbBound) return;
+      img.dataset.fbBound = "1";
+      img.addEventListener("error", function () {
+        img.style.visibility = "hidden";
+        var p = img.parentElement;
+        if (p) p.classList.add("img-fallback");
+      });
+    });
+  }
+  bindFallbacks();
+
+  /* ==========================================================
+     3. YEAR
+     ========================================================== */
+  var yr = $("#year");
+  if (yr) yr.textContent = new Date().getFullYear();
+
+  /* ==========================================================
+     4. NAVIGATION — scroll state, active link, mobile drawer
+     ========================================================== */
+  var nav = $("#nav");
+  var burger = $("#burger");
+  var drawer = $("#drawer");
+
+  function onScrollNav() {
+    if (window.scrollY > 60) nav.classList.add("is-scrolled");
+    else nav.classList.remove("is-scrolled");
+  }
+  onScrollNav();
+
+  function closeDrawer() {
+    if (!drawer) return;
+    drawer.classList.remove("is-open");
+    burger.classList.remove("is-open");
+    burger.setAttribute("aria-expanded", "false");
+    burger.setAttribute("aria-label", "Open menu");
+    document.body.style.overflow = "";
+  }
+  function openDrawer() {
+    drawer.classList.add("is-open");
+    burger.classList.add("is-open");
+    burger.setAttribute("aria-expanded", "true");
+    burger.setAttribute("aria-label", "Close menu");
+    document.body.style.overflow = "hidden";
+    // stagger links
+    $$(".drawer__link", drawer).forEach(function (a, i) {
+      a.style.transitionDelay = (0.09 * i + 0.15) + "s";
+    });
+  }
+
+  if (burger && drawer) {
+    burger.addEventListener("click", function () {
+      if (drawer.classList.contains("is-open")) closeDrawer();
+      else openDrawer();
+    });
+    $$(".drawer__link", drawer).forEach(function (a) {
+      a.addEventListener("click", closeDrawer);
+    });
+    drawer.addEventListener("click", function (e) {
+      if (e.target === drawer) closeDrawer();
+    });
+  }
+
+  /* Active section highlighting */
+  var sections = $$("section[id]");
+  var navLinks = $$(".nav__link");
+  if ("IntersectionObserver" in window && sections.length) {
+    var spy = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (!en.isIntersecting) return;
+        var id = en.target.id;
+        navLinks.forEach(function (l) {
+          l.classList.toggle("is-active", l.getAttribute("href") === "#" + id);
+        });
+      });
+    }, { rootMargin: "-45% 0px -50% 0px", threshold: 0 });
+    sections.forEach(function (s) { spy.observe(s); });
+  }
+
+  /* ==========================================================
+     5. SCROLL REVEAL
+     ========================================================== */
+  (function reveal() {
+    var items = $$("[data-reveal]");
+    if (!items.length) return;
+
+    if (reduceMotion || !("IntersectionObserver" in window)) {
+      items.forEach(function (el) { el.classList.add("is-in"); });
+      return;
+    }
+
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (en.isIntersecting) {
+          en.target.classList.add("is-in");
+          io.unobserve(en.target);
+        }
+      });
+    }, { rootMargin: "0px 0px -8% 0px", threshold: 0.08 });
+
+    items.forEach(function (el) { io.observe(el); });
+  })();
+
+  /* ==========================================================
+     6. HERO PARALLAX
+     ========================================================== */
+  (function heroParallax() {
+    var media = $("#heroMedia");
+    if (!media || reduceMotion) return;
+    var ticking = false;
+
+    function update() {
+      var y = window.scrollY;
+      if (y < window.innerHeight * 1.2) {
+        media.style.transform = "translate3d(0," + (y * 0.28) + "px,0)";
+      }
+      ticking = false;
+    }
+    window.addEventListener("scroll", function () {
+      if (!ticking) {
+        ticking = true;
+        window.requestAnimationFrame(update);
+      }
+    }, { passive: true });
+  })();
+
+  /* ==========================================================
+     7. MENU — tabs + filtering
+     ========================================================== */
+  (function menu() {
+    var panel = $("#menuPanel");
+    var tabs = $$("#menuTabs .tab");
+    if (!panel) return;
+
+    function render(cat) {
+      var data = MENU[cat];
+
+      // Empty / placeholder state
+      if (!data || data.empty) {
+        panel.innerHTML =
+          '<div class="menu__empty">' +
+            '<h3>' + (data ? data.title : "Menu") + '</h3>' +
+            '<p>' + (data ? data.note : "Please ask our team for details.") + '</p>' +
+            '<a class="btn btn--line" href="tel:' + PHONE + '">Call us for today\'s full menu</a>' +
+          '</div>';
+        return;
+      }
+
+      var html = '<div class="menu__list">';
+      data.forEach(function (item, i) {
+        var priceHtml = item.price
+          ? '<span class="mitem__price">' + item.price + '</span>'
+          : '<span class="mitem__price mitem__price--soft">' + (item.tag || "Signature") + '</span>';
+
+        html +=
+          '<article class="mitem" style="animation-delay:' + (i * 0.045) + 's">' +
+            '<div class="mitem__text">' +
+              '<h3 class="mitem__name">' + item.name + '</h3>' +
+              (item.desc ? '<p class="mitem__desc">' + item.desc + '</p>' : '') +
+            '</div>' +
+            priceHtml +
+          '</article>';
+      });
+      html += '</div>';
+      panel.innerHTML = html;
+    }
+
+    tabs.forEach(function (tab) {
+      tab.addEventListener("click", function () {
+        tabs.forEach(function (t) {
+          t.classList.remove("is-active");
+          t.setAttribute("aria-selected", "false");
+        });
+        tab.classList.add("is-active");
+        tab.setAttribute("aria-selected", "true");
+
+        panel.style.animation = "none";
+        // force reflow to restart the panel animation
+        void panel.offsetWidth;
+        panel.style.animation = "";
+
+        render(tab.dataset.cat);
+      });
+    });
+
+    render("highlights");
+  })();
+
+  /* ==========================================================
+     8. GALLERY + LIGHTBOX
+     ========================================================== */
+  (function gallery() {
+    var wrap = $("#masonry");
+    if (!wrap) return;
+
+    var html = "";
+    GALLERY.forEach(function (g, i) {
+      html +=
+        '<button class="gitem ' + g.cls + '" data-index="' + i + '" aria-label="View image: ' + g.title + '">' +
+          '<img src="' + g.src + '" alt="' + g.title + ' — Koshe Kosha Durgapur" loading="lazy" />' +
+          '<span class="gitem__cap"><b>' + g.title + '</b><span>' + g.meta + '</span></span>' +
+        '</button>';
+    });
+    wrap.innerHTML = html;
+    bindFallbacks(wrap);
+
+    var lb      = $("#lightbox");
+    var lbImg   = $("#lbImg");
+    var lbTitle = $("#lbTitle");
+    var lbMeta  = $("#lbMeta");
+    var current = 0;
+    var lastFocus = null;
+
+    function show(i) {
+      current = (i + GALLERY.length) % GALLERY.length;
+      var g = GALLERY[current];
+      lbImg.src = g.src;
+      lbImg.alt = g.title + " — Koshe Kosha Durgapur";
+      lbTitle.textContent = g.title;
+      lbMeta.textContent = (current + 1) + " / " + GALLERY.length + " · " + g.meta;
+    }
+
+    function open(i) {
+      lastFocus = document.activeElement;
+      show(i);
+      lb.classList.add("is-open");
+      document.body.style.overflow = "hidden";
+      $("#lbClose").focus();
+    }
+
+    function close() {
+      lb.classList.remove("is-open");
+      document.body.style.overflow = "";
+      if (lastFocus && lastFocus.focus) lastFocus.focus();
+    }
+
+    wrap.addEventListener("click", function (e) {
+      var btn = e.target.closest(".gitem");
+      if (!btn) return;
+      open(parseInt(btn.dataset.index, 10) || 0);
+    });
+
+    $("#lbClose").addEventListener("click", close);
+    $("#lbPrev").addEventListener("click", function () { show(current - 1); });
+    $("#lbNext").addEventListener("click", function () { show(current + 1); });
+
+    lb.addEventListener("click", function (e) {
+      if (e.target === lb) close();
+    });
+
+    document.addEventListener("keydown", function (e) {
+      if (!lb.classList.contains("is-open")) return;
+      if (e.key === "Escape") close();
+      if (e.key === "ArrowLeft") show(current - 1);
+      if (e.key === "ArrowRight") show(current + 1);
+    });
+
+    /* Touch swipe */
+    var tx = 0, ty = 0;
+    lb.addEventListener("touchstart", function (e) {
+      tx = e.changedTouches[0].clientX;
+      ty = e.changedTouches[0].clientY;
+    }, { passive: true });
+
+    lb.addEventListener("touchend", function (e) {
+      var dx = e.changedTouches[0].clientX - tx;
+      var dy = e.changedTouches[0].clientY - ty;
+      if (Math.abs(dx) > 55 && Math.abs(dx) > Math.abs(dy)) {
+        if (dx < 0) show(current + 1);
+        else show(current - 1);
+      }
+    }, { passive: true });
+  })();
+
+  /* ==========================================================
+     9. RESERVATION FORM (frontend-only demo)
+     ========================================================== */
+  (function reservation() {
+    var form = $("#reserveForm");
+    var success = $("#reserveSuccess");
+    var reset = $("#reserveReset");
+    if (!form) return;
+
+    // Default date to today
+    var dateInput = $("#r-date");
+    if (dateInput) {
+      var t = new Date();
+      var iso = t.getFullYear() + "-" +
+                String(t.getMonth() + 1).padStart(2, "0") + "-" +
+                String(t.getDate()).padStart(2, "0");
+      dateInput.min = iso;
+      dateInput.value = iso;
+    }
+
+    function setError(field, on) {
+      field.classList.toggle("has-error", on);
+    }
+
+    function validate() {
+      var ok = true;
+      var fields = $$(".field", form);
+
+      fields.forEach(function (f) { f.classList.remove("has-error"); });
+
+      var name  = $("#r-name");
+      var phone = $("#r-phone");
+      var guests= $("#r-guests");
+      var date  = $("#r-date");
+      var time  = $("#r-time");
+
+      if (!name.value.trim() || name.value.trim().length < 2) {
+        setError(name.closest(".field"), true); ok = false;
+      }
+      var digits = phone.value.replace(/\D/g, "");
+      if (digits.length < 10) {
+        setError(phone.closest(".field"), true); ok = false;
+      }
+      if (!guests.value) { setError(guests.closest(".field"), true); ok = false; }
+      if (!date.value)   { setError(date.closest(".field"), true); ok = false; }
+      if (!time.value)   { setError(time.closest(".field"), true); ok = false; }
+
+      return ok;
+    }
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      if (!validate()) {
+        var firstErr = $(".field.has-error input, .field.has-error select", form);
+        if (firstErr) firstErr.focus();
+        return;
+      }
+      form.hidden = true;
+      success.hidden = false;
+      success.scrollIntoView({ behavior: reduceMotion ? "auto" : "smooth", block: "center" });
+    });
+
+    // live clearing
+    $$("input, select", form).forEach(function (el) {
+      el.addEventListener("input", function () {
+        var f = el.closest(".field");
+        if (f) f.classList.remove("has-error");
+      });
+    });
+
+    if (reset) {
+      reset.addEventListener("click", function () {
+        form.reset();
+        if (dateInput) {
+          var t2 = new Date();
+          dateInput.value = t2.getFullYear() + "-" +
+            String(t2.getMonth() + 1).padStart(2, "0") + "-" +
+            String(t2.getDate()).padStart(2, "0");
+        }
+        $$(".field", form).forEach(function (f) { f.classList.remove("has-error"); });
+        success.hidden = true;
+        form.hidden = false;
+        form.scrollIntoView({ behavior: reduceMotion ? "auto" : "smooth", block: "center" });
+      });
+    }
+  })();
+
+  /* ==========================================================
+     10. TOAST + ORDER CTA
+     ========================================================== */
+  var toastEl = $("#toast");
+  var toastTimer = null;
+
+  function toast(msg) {
+    if (!toastEl) return;
+    toastEl.innerHTML = msg;
+    toastEl.classList.add("is-visible");
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function () {
+      toastEl.classList.remove("is-visible");
+    }, 4200);
+  }
+
+  $$("[data-order]").forEach(function (btn) {
+    btn.addEventListener("click", function (e) {
+      e.preventDefault();
+      toast("<b>Order Online</b><br />Online ordering integration can be connected in the final website.");
+    });
+  });
+
+  /* ==========================================================
+     11. BACK TO TOP + MOBILE BAR
+     ========================================================== */
+  var toTop = $("#toTop");
+  var mobileBar = $("#mobileBar");
+
+  function onScrollUI() {
+    var y = window.scrollY;
+    var show = y > window.innerHeight * 0.75;
+
+    if (toTop) toTop.classList.toggle("is-visible", show);
+    if (mobileBar) mobileBar.classList.toggle("is-visible", y > window.innerHeight * 0.6);
+
+    onScrollNav();
+  }
+
+  var scrollTicking = false;
+  window.addEventListener("scroll", function () {
+    if (!scrollTicking) {
+      scrollTicking = true;
+      window.requestAnimationFrame(function () {
+        onScrollUI();
+        scrollTicking = false;
+      });
+    }
+  }, { passive: true });
+
+  onScrollUI();
+
+  if (toTop) {
+    toTop.addEventListener("click", function () {
+      window.scrollTo({ top: 0, behavior: reduceMotion ? "auto" : "smooth" });
+    });
+  }
+
+  /* ==========================================================
+     12. SMOOTH ANCHOR SCROLL (with nav offset)
+     ========================================================== */
+  $$('a[href^="#"]').forEach(function (a) {
+    a.addEventListener("click", function (e) {
+      var id = a.getAttribute("href");
+      if (!id || id === "#" || id.length < 2) return;
+      var target = document.querySelector(id);
+      if (!target) return;
+
+      e.preventDefault();
+      var navH = nav ? nav.offsetHeight : 0;
+      var top = target.getBoundingClientRect().top + window.scrollY - navH + 1;
+
+      window.scrollTo({ top: top, behavior: reduceMotion ? "auto" : "smooth" });
+
+      // move focus for accessibility without an extra jump
+      target.setAttribute("tabindex", "-1");
+      setTimeout(function () { target.focus({ preventScroll: true }); }, reduceMotion ? 0 : 620);
+    });
+  });
+
+  /* ==========================================================
+     13. CUSTOM CURSOR (desktop / fine pointer only)
+     ========================================================== */
+  (function cursor() {
+    if (reduceMotion) return;
+    if (!window.matchMedia("(hover: hover) and (pointer: fine)").matches) return;
+
+    var ring = $(".cursor");
+    var dot  = $(".cursor-dot");
+    if (!ring || !dot) return;
+
+    var mx = window.innerWidth / 2, my = window.innerHeight / 2;
+    var rx = mx, ry = my;
+    var visible = false;
+
+    document.addEventListener("mousemove", function (e) {
+      mx = e.clientX; my = e.clientY;
+      if (!visible) {
+        visible = true;
+        ring.style.opacity = "1";
+        dot.style.opacity = "1";
+      }
+      dot.style.transform = "translate(" + mx + "px," + my + "px) translate(-50%,-50%)";
+    }, { passive: true });
+
+    document.addEventListener("mouseleave", function () {
+      ring.style.opacity = "0";
+      dot.style.opacity = "0";
+      visible = false;
+    });
+
+    (function loop() {
+      rx += (mx - rx) * 0.16;
+      ry += (my - ry) * 0.16;
+      ring.style.transform = "translate(" + rx + "px," + ry + "px) translate(-50%,-50%)";
+      window.requestAnimationFrame(loop);
+    })();
+
+    var hoverSel = "a, button, .dish, .gitem, .tab, input, select, .tag, .exp-item";
+    document.addEventListener("mouseover", function (e) {
+      if (e.target.closest(hoverSel)) ring.classList.add("is-hover");
+    });
+    document.addEventListener("mouseout", function (e) {
+      if (e.target.closest(hoverSel)) ring.classList.remove("is-hover");
+    });
+
+    ring.style.opacity = "0";
+    dot.style.opacity = "0";
+  })();
+
+  /* ==========================================================
+     14. GLOBAL ESCAPE HANDLER
+     ========================================================== */
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && drawer && drawer.classList.contains("is-open")) {
+      closeDrawer();
+      if (burger) burger.focus();
+    }
+  });
+
+})();
+</script>
+</body>
+</html>
